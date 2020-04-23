@@ -82,6 +82,7 @@ void clear_LCD(bit mode)
 }
 
 
+// 将 uchar 类型数字转成字符串
 char str[4];
 char* uchar2string(uchar n)
 {

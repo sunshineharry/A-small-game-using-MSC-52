@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   LCD                                                               04/23/2020 15:25:35 PAGE 1   
+C51 COMPILER V9.52.0.0   LCD                                                               04/23/2020 19:56:40 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LCD
@@ -62,7 +62,7 @@ line level    source
   52   1          write_cmd(addr);
   53   1          while(str[i]!='\0')
   54   1          {
-C51 COMPILER V9.52.0.0   LCD                                                               04/23/2020 15:25:35 PAGE 2   
+C51 COMPILER V9.52.0.0   LCD                                                               04/23/2020 19:56:40 PAGE 2   
 
   55   2              write_char(str[i]);
   56   2              i++;
@@ -94,39 +94,40 @@ line level    source
   82   1      }
   83          
   84          
-  85          char str[4];
-  86          char* uchar2string(uchar n)
-  87          {
-  88   1      
-  89   1          uchar *pStr;
-  90   1          pStr = str;
-  91   1          if (n > 99)
-  92   1          {
-  93   2              *pStr = n / 100 + '0';
-  94   2              n %= 100;
-  95   2              pStr += 1;
-  96   2              *pStr = n / 10 + '0';
-  97   2              n %= 10;
-  98   2              pStr += 1;
-  99   2              *pStr = n + '0';
- 100   2          }
- 101   1          if (n > 9)
- 102   1          {
- 103   2              *pStr = n / 10 + '0';
- 104   2              n %= 10;
- 105   2              pStr += 1;
- 106   2              *pStr = n + '0';
- 107   2          }
- 108   1          if (n < 10)
- 109   1          {
- 110   2              *pStr = n + '0';
- 111   2          }
- 112   1          pStr += 1;
- 113   1          *pStr = '\0';
- 114   1          return str;
- 115   1      }
+  85          // 将 uchar 类型数字转成字符串
+  86          char str[4];
+  87          char* uchar2string(uchar n)
+  88          {
+  89   1      
+  90   1          uchar *pStr;
+  91   1          pStr = str;
+  92   1          if (n > 99)
+  93   1          {
+  94   2              *pStr = n / 100 + '0';
+  95   2              n %= 100;
+  96   2              pStr += 1;
+  97   2              *pStr = n / 10 + '0';
+  98   2              n %= 10;
+  99   2              pStr += 1;
+ 100   2              *pStr = n + '0';
+ 101   2          }
+ 102   1          if (n > 9)
+ 103   1          {
+ 104   2              *pStr = n / 10 + '0';
+ 105   2              n %= 10;
+ 106   2              pStr += 1;
+ 107   2              *pStr = n + '0';
+ 108   2          }
+ 109   1          if (n < 10)
+ 110   1          {
+ 111   2              *pStr = n + '0';
+ 112   2          }
+ 113   1          pStr += 1;
+ 114   1          *pStr = '\0';
+ 115   1          return str;
+ 116   1      }
+C51 COMPILER V9.52.0.0   LCD                                                               04/23/2020 19:56:40 PAGE 3   
 
-C51 COMPILER V9.52.0.0   LCD                                                               04/23/2020 15:25:35 PAGE 3   
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE

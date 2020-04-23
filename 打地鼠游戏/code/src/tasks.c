@@ -33,8 +33,8 @@ void pause() interrupt 2
     clear_LCD(0);
     display_LCD(0x80,"   PAUSE");       // 更新 LCD 显示屏
     init_random(TL1);                   // 重新获取随机数
-    while(is_pause);                    // 当 “CONTINUE” 按下前，标志位一直为 1
-                                        //  “CONTINUE” 按下后，标志位清零，退出无线循环，继续游戏
+    while(is_pause);                    // 当 "CONTINUE" 按下前，标志位一直为 1
+                                        //  "CONTINUE" 按下后，标志位清零，退出无限循环，继续游戏
 }
 
 // INT0 中断，手动设置高优先级
@@ -59,12 +59,12 @@ uchar count = 0;                        // 计数变量，当 count = 10 使表示半秒
 // 正常情况每半秒钟更新
 void TIM_0_isr() interrupt 1
 {
-    TH0 = (65536 - 50000) / 256;
+    TH0 = (65536 - 50000) / 256;        // 定时器手动重装
     TL0 = (65536 - 50000) % 256;
     count++;
-    if (count==10)
+    if (count==10)                      // 半秒时间到
     {
-        count = 0;
+        count = 0;                      // 清空标志位
         update();                       // 调用update函数，执行主逻辑
     }
 }

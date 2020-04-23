@@ -40,10 +40,10 @@ void update()
         {
             if(decode == key_scan())
             {
-                score++;
-                error = 0;
-                P0 = 0x00;
-                goto LABAL;
+                score++;        // 检测到正确按键，更新分数
+                error = 0;      // 清空错误次数
+                P0 = 0x00;      // 关闭 LED 点阵
+                goto LABAL;     // 直接跳转到更新屏幕分数显示
             }
         }
     }

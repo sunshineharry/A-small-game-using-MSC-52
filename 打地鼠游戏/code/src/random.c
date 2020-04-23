@@ -3,7 +3,7 @@
 #define uchar unsigned char
 #include "reg52.h"
 
-// TODO 占用空间较大，待优化
+// 利用自带函数产生随机数
 
 void init_random(unsigned char seed)
 {
