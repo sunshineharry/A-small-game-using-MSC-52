@@ -1,1 +1,1 @@
-extern unsigned char key_scan();
+extern unsigned char KEYBOARD_get_key();

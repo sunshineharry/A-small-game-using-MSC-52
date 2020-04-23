@@ -1,5 +1,5 @@
 #include "REG52.H"
-void init_ex0()
+void EX0_init()
 {
     IT0 = 1;    // 下降沿触发
     PX0 = 1;    // 高优先级
@@ -7,7 +7,7 @@ void init_ex0()
     EA = 1;     // 总中断运行
 }
 
-void init_ex1()
+void EX1_init()
 {
     IT1 = 1;
     PX1 = 0;
@@ -15,7 +15,7 @@ void init_ex1()
     EA = 1;
 }
 
-void init_TIM_0(void)
+void TIM_0_init(void)
 {
     // 初始化 TMOD 寄存器
     // 50ms 中断一次
@@ -27,7 +27,7 @@ void init_TIM_0(void)
     TR0 = 1;
 }
 
-void init_TIM_1(void)
+void TIM_1_init(void)
 {
     // 初始化 TMOD 寄存器
     // 产生随机数

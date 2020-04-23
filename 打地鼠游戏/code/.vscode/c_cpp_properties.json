@@ -3,10 +3,10 @@
         {
             "name": "win32",
             "includePath": [
-                "c:\\Users\\Harry\\DOCUME~1\\ONEDRI~1\\学习资料\\大二下~1\\微机原理\\实验\\仿真实验\\打地鼠游戏\\code\\dependence",
-                "c:\\Users\\Harry\\DOCUME~1\\ONEDRI~1\\学习资料\\大二下~1\\微机原理\\实验\\仿真实验\\打地鼠游戏\\code\\src",
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\仿真实验\\打地鼠游戏\\code\\dependence",
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\仿真实验\\打地鼠游戏\\code\\src",
                 "C:\\Program Files\\Keil\\C51\\INC",
-                "c:\\Users\\Harry\\DOCUME~1\\ONEDRI~1\\学习资料\\大二下~1\\微机原理\\实验\\仿真实验\\打地鼠游戏\\code\\dependence\\build-in\\toolchain"
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\仿真实验\\打地鼠游戏\\code\\dependence\\build-in\\toolchain"
             ],
             "defines": [
                 "__C51__",

@@ -30,8 +30,8 @@ void pause() interrupt 2
 {
     P0 = 0x00;                          // LED 点阵熄灭
     is_pause = 1;                       // 更新标志位
-    clear_LCD(0);
-    display_LCD(0x80,"   PAUSE");       // 更新 LCD 显示屏
+    LCD_clear(0);
+    LCD_display(0x80,"   PAUSE");       // 更新 LCD 显示屏
     init_random(TL1);                   // 重新获取随机数
     while(is_pause);                    // 当 "CONTINUE" 按下前，标志位一直为 1
                                         //  "CONTINUE" 按下后，标志位清零，退出无限循环，继续游戏
@@ -42,11 +42,11 @@ void continuee() interrupt 0
 {
     if (is_pause == 0)                  // 当之前没有按下"PAUSE"键，不做任何反应
         return;
-    clear_LCD(0);                       // 更新显示屏并暂留
-    display_LCD(0x80,"CONTINUE");
+    LCD_clear(0);                       // 更新显示屏并暂留
+    LCD_display(0x80,"CONTINUE");
     delay500ms();
-    display_LCD(0x80,"Score:     ");    // 显示屏恢复暂停前的状态
-    display_LCD(0xC2,uchar2string(score));
+    LCD_display(0x80,"Score:     ");    // 显示屏恢复暂停前的状态
+    LCD_display(0xC2,uchar2string(score));
     is_pause = 0;                       // 更新标志位，使之退出pause中断
 }
 

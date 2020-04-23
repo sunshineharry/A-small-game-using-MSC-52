@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   MAIN                                                              04/23/2020 19:56:40 PAGE 1   
+C51 COMPILER V9.52.0.0   MAIN                                                              04/23/2020 22:15:29 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
@@ -20,11 +20,11 @@ line level    source
   10          // 初始化硬件配置
   11          void init()
   12          {
-  13   1          init_LCD();         // LCD 初始化
-  14   1          init_ex0();         // 外中断0
-  15   1          init_ex1();
-  16   1          init_TIM_0();
-  17   1          init_TIM_1();       // 为了产生随机数
+  13   1          LCD_init();         // LCD 初始化
+  14   1          EX0_init();         // 外中断0
+  15   1          EX1_init();
+  16   1          TIM_0_init();
+  17   1          TIM_1_init();       // 为了产生随机数
   18   1          init_random(TL1);
   19   1      }
   20          
@@ -34,9 +34,9 @@ line level    source
   24          {
   25   1          init();
   26   1          // 启动界面
-  27   1          display_LCD(0x80,"Welcome");
+  27   1          LCD_display(0x80,"Welcome");
   28   1          delay500ms();
-  29   1          display_LCD(0x80,"Score:   ");
+  29   1          LCD_display(0x80,"Score:   ");
   30   1          while(1)
   31   1          {
   32   2              // 利用定时器生成随机数，主任务由中断引发

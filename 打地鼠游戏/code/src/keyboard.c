@@ -2,7 +2,7 @@
 #include "keyboard.h"
 
 
-unsigned char key_scan()
+unsigned char KEYBOARD_get_key()
 {
     unsigned char key_num = 0xff;
     unsigned char tmp_1 = 0, tmp_2 = 0, flag = 0;

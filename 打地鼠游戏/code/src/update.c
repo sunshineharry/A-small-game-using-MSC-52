@@ -38,7 +38,7 @@ void update()
     {
         for (j=0;j<150;j++)
         {
-            if(decode == key_scan())
+            if(decode == KEYBOARD_get_key())
             {
                 score++;        // 检测到正确按键，更新分数
                 error = 0;      // 清空错误次数
@@ -50,11 +50,11 @@ void update()
     error++;
     if (error>3)
     {
-        clear_LCD(0);
-        display_LCD(0x80,"FAIL!");
+        LCD_clear(0);
+        LCD_display(0x80,"FAIL!");
         while(1);
     }
 
     // 刷新屏幕
-    LABAL:display_LCD(0xC2,uchar2string(score));
+    LABAL:LCD_display(0xC2,uchar2string(score));
 }

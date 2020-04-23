@@ -10,11 +10,11 @@ extern void delay500ms(void);
 // 初始化硬件配置
 void init()
 {
-    init_LCD();         // LCD 初始化
-    init_ex0();         // 外中断0
-    init_ex1();
-    init_TIM_0();
-    init_TIM_1();       // 为了产生随机数
+    LCD_init();         // LCD 初始化
+    EX0_init();         // 外中断0
+    EX1_init();
+    TIM_0_init();
+    TIM_1_init();       // 为了产生随机数
     init_random(TL1);
 }
 
@@ -24,9 +24,9 @@ void main()
 {
     init();
     // 启动界面
-    display_LCD(0x80,"Welcome");
+    LCD_display(0x80,"Welcome");
     delay500ms();
-    display_LCD(0x80,"Score:   ");
+    LCD_display(0x80,"Score:   ");
     while(1)
     {
         // 利用定时器生成随机数，主任务由中断引发

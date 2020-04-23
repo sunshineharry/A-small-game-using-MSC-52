@@ -1,43 +1,45 @@
+// LCD 液晶显示屏硬件接口函数
+
 #include "reg52.h"
 #include "LCD.h"
 
 
-void delay()
+void _LCD_delay()
 {
     uchar j=0,i=0;
     for(j=0;j<255;j++)
         for(i=0;i<4;i++);
 }
 
-void write_char(uchar dat)
+void _LCD_write_char(uchar dat)
 {
     // 根据时序图
     RS = 1;
     RW = 0;
     E  = 0;
     LCD_PORT = dat;
-    delay();
+    _LCD_delay();
     E = 1;
     E = 0;
 }
 
-void write_cmd(uchar command)
+void _LCD_write_cmd(uchar command)
 {
     RS = 0;
     RW = 0;
     E  = 0;
     LCD_PORT = command;
-    delay();
+    _LCD_delay();
     E = 1;
     E = 0;
 }
 
-void init_LCD()
+void LCD_init()
 {
-    write_cmd(0x38);    // 设置16×2显示，5×7点阵，8位数据接口
-    write_cmd(0x0c);    // 设置开显示，不显示光标
-    write_cmd(0x06);    // 写一个字符后地址指针加1
-    write_cmd(0x01);    // 显示清0，数据指针清0
+    _LCD_write_cmd(0x38);    // 设置16×2显示，5×7点阵，8位数据接口
+    _LCD_write_cmd(0x0c);    // 设置开显示，不显示光标
+    _LCD_write_cmd(0x06);    // 写一个字符后地址指针加1
+    _LCD_write_cmd(0x01);    // 显示清0，数据指针清0
 }
 
 
@@ -46,39 +48,27 @@ void init_LCD()
  * @param  addr: 需要显示首地址
  * @param  *str: 字符串的首地址
  */
-void display_LCD(uchar addr,char *str)
+void LCD_display(uchar addr,char *str)
 {
     uchar i = 0;
-    write_cmd(addr);
+    _LCD_write_cmd(addr);
     while(str[i]!='\0')
     {
-        write_char(str[i]);
+        _LCD_write_char(str[i]);
         i++;
     }
 }
 
-#if 0
-/**
- * @brief  在屏幕上显示单个字符  
- * @param  addr: 需要显示地址
- * @param  str: 字符
- */
-void display_LCD_single(uchar addr ,char str)
-{
-    uchar i = 0;
-    write_cmd(addr);
-    write_char(str);
-}
-#endif
+
 
 /* mode=0：显示清零，指针清零
    mode=1: 仅指针清零   */
-void clear_LCD(bit mode)
+void LCD_clear(bit mode)
 {
     if(mode == 0)
-        write_cmd(0x01);    // 显示清0，数据指针清0
+        _LCD_write_cmd(0x01);    // 显示清0，数据指针清0
     if(mode == 1)
-        write_cmd(0x02);
+        _LCD_write_cmd(0x02);
 }
 
 

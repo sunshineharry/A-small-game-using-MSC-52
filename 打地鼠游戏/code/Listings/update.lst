@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   UPDATE                                                            04/23/2020 19:56:40 PAGE 1   
+C51 COMPILER V9.52.0.0   UPDATE                                                            04/23/2020 22:15:29 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE UPDATE
@@ -48,7 +48,7 @@ line level    source
   38   1          {
   39   2              for (j=0;j<150;j++)
   40   2              {
-  41   3                  if(decode == key_scan())
+  41   3                  if(decode == KEYBOARD_get_key())
   42   3                  {
   43   4                      score++;        // 检测到正确按键，更新分数
   44   4                      error = 0;      // 清空错误次数
@@ -60,15 +60,15 @@ line level    source
   50   1          error++;
   51   1          if (error>3)
   52   1          {
-  53   2              clear_LCD(0);
-  54   2              display_LCD(0x80,"FAIL!");
-C51 COMPILER V9.52.0.0   UPDATE                                                            04/23/2020 19:56:40 PAGE 2   
+  53   2              LCD_clear(0);
+  54   2              LCD_display(0x80,"FAIL!");
+C51 COMPILER V9.52.0.0   UPDATE                                                            04/23/2020 22:15:29 PAGE 2   
 
   55   2              while(1);
   56   2          }
   57   1      
   58   1          // 刷新屏幕
-  59   1          LABAL:display_LCD(0xC2,uchar2string(score));
+  59   1          LABAL:LCD_display(0xC2,uchar2string(score));
   60   1      }
 
 

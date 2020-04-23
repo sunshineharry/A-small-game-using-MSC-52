@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   INTERRUPT                                                         04/23/2020 19:56:39 PAGE 1   
+C51 COMPILER V9.52.0.0   INTERRUPT                                                         04/23/2020 22:15:29 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE INTERRUPT
@@ -9,7 +9,7 @@ COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\interrupt.c OMF2 
 line level    source
 
    1          #include "REG52.H"
-   2          void init_ex0()
+   2          void EX0_init()
    3          {
    4   1          IT0 = 1;    // 下降沿触发
    5   1          PX0 = 1;    // 高优先级
@@ -17,7 +17,7 @@ line level    source
    7   1          EA = 1;     // 总中断运行
    8   1      }
    9          
-  10          void init_ex1()
+  10          void EX1_init()
   11          {
   12   1          IT1 = 1;
   13   1          PX1 = 0;
@@ -25,7 +25,7 @@ line level    source
   15   1          EA = 1;
   16   1      }
   17          
-  18          void init_TIM_0(void)
+  18          void TIM_0_init(void)
   19          {
   20   1          // 初始化 TMOD 寄存器
   21   1          // 50ms 中断一次
@@ -37,7 +37,7 @@ line level    source
   27   1          TR0 = 1;
   28   1      }
   29          
-  30          void init_TIM_1(void)
+  30          void TIM_1_init(void)
   31          {
   32   1          // 初始化 TMOD 寄存器
   33   1          // 产生随机数
@@ -63,7 +63,7 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
    FAR CONST SIZE   =   ----    ----
 END OF MODULE INFORMATION.
 
-C51 COMPILER V9.52.0.0   INTERRUPT                                                         04/23/2020 19:56:39 PAGE 2   
+C51 COMPILER V9.52.0.0   INTERRUPT                                                         04/23/2020 22:15:29 PAGE 2   
 
 
 C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

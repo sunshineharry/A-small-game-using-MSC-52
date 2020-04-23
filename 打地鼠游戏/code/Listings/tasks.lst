@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   TASKS                                                             04/23/2020 19:56:40 PAGE 1   
+C51 COMPILER V9.52.0.0   TASKS                                                             04/23/2020 22:15:30 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE TASKS
@@ -40,8 +40,8 @@ line level    source
   30          {
   31   1          P0 = 0x00;                          // LED 点阵熄灭
   32   1          is_pause = 1;                       // 更新标志位
-  33   1          clear_LCD(0);
-  34   1          display_LCD(0x80,"   PAUSE");       // 更新 LCD 显示屏
+  33   1          LCD_clear(0);
+  34   1          LCD_display(0x80,"   PAUSE");       // 更新 LCD 显示屏
   35   1          init_random(TL1);                   // 重新获取随机数
   36   1          while(is_pause);                    // 当 "CONTINUE" 按下前，标志位一直为 1
   37   1                                              //  "CONTINUE" 按下后，标志位清零，退出无限循环，继续游戏
@@ -52,17 +52,17 @@ line level    source
   42          {
   43   1          if (is_pause == 0)                  // 当之前没有按下"PAUSE"键，不做任何反应
   44   1              return;
-  45   1          clear_LCD(0);                       // 更新显示屏并暂留
-  46   1          display_LCD(0x80,"CONTINUE");
+  45   1          LCD_clear(0);                       // 更新显示屏并暂留
+  46   1          LCD_display(0x80,"CONTINUE");
   47   1          delay500ms();
-  48   1          display_LCD(0x80,"Score:     ");    // 显示屏恢复暂停前的状态
-  49   1          display_LCD(0xC2,uchar2string(score));
+  48   1          LCD_display(0x80,"Score:     ");    // 显示屏恢复暂停前的状态
+  49   1          LCD_display(0xC2,uchar2string(score));
   50   1          is_pause = 0;                       // 更新标志位，使之退出pause中断
   51   1      }
   52          
   53          
   54          /***********************
-C51 COMPILER V9.52.0.0   TASKS                                                             04/23/2020 19:56:40 PAGE 2   
+C51 COMPILER V9.52.0.0   TASKS                                                             04/23/2020 22:15:30 PAGE 2   
 
   55                 正常运行
   56          ***********************/
