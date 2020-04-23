@@ -1,0 +1,46 @@
+C51 COMPILER V9.52.0.0   SINGLE_KEY                                                        04/20/2020 14:20:50 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE SINGLE_KEY
+OBJECT MODULE PLACED IN c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\single_key\code\out\single_key.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§Æ
+                    -Ú\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\single_key\code\src\single_key.c PRINT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§Æ
+                    -Ú\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\single_key\code\out\single_key.lst) OMF2 TABS(2) OPTIMIZE(8,SPEED) SMALL ROM(SMALL) INCDIR(c:\Users\
+                    -Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\single_key\code\dependence;c:\Users\Harry\Docume
+                    -nts\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\single_key\code\src;c:\Users\Harry\Documents\OneDrive - ODMA
+                    -IL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\single_key\code\dependence\build-in\STD) DEFINE(__UVISION_VERSION) OBJECT(c:\Us
+                    -ers\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\single_key\code\out\single_key.o)
+
+line level    source
+
+   1          # include"single_key.h"
+   2          
+   3          
+   4          bit is_single_key_press()
+   5          {
+   6   1          bit is_press = 0;
+   7   1          unsigned char flag = 0;
+   8   1          if (key0 == 0 && flag == 0)
+   9   1              flag = 1;
+  10   1          if (key0 == 1 && flag == 1)
+  11   1              is_press = 1;
+  12   1          return is_press;
+  13   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     21    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----       1
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

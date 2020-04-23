@@ -1,0 +1,1 @@
+extern bit is_single_key_press();

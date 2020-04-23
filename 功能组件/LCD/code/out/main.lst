@@ -1,0 +1,47 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              04/20/2020 08:44:08 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\LCD\code\out\main.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§Æ
+                    -Ú\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\LCD\code\src\main.c PRINT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦
+                    -ÄÜ×é¼þ\LCD\code\out\main.lst) OMF2 TABS(2) OPTIMIZE(8,SPEED) SMALL ROM(SMALL) INCDIR(c:\Users\Harry\Documents\OneDrive -
+                    - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\LCD\code\dependence;c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó
+                    -¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\LCD\code\src;c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ
+                    -\LCD\code\dependence\build-in\STD) DEFINE(__UVISION_VERSION) OBJECT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\
+                    -´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼þ\LCD\code\out\main.o)
+
+line level    source
+
+   1          #include "LCD_func.h"
+   2          
+   3          char str[] = {"Hello world!"};
+   4          
+   5          void main()
+   6          {
+   7   1          init_LCD();
+   8   1          while (1)
+   9   1          {
+  10   2              display_LCD(1,&str);
+  11   2              clear_LCD();
+  12   2          }
+  13   1          
+  14   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     16    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     13    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

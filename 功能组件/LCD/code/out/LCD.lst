@@ -1,0 +1,102 @@
+C51 COMPILER V9.52.0.0   LCD                                                               04/20/2020 08:44:08 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LCD
+OBJECT MODULE PLACED IN c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶şÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼ş\LCD\code\out\LCD.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶şÏÂÑ§Æ
+                    -Ú\Î¢»úÔ­Àí\¹¦ÄÜ×é¼ş\LCD\code\src\LCD.c PRINT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶şÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦Ä
+                    -Ü×é¼ş\LCD\code\out\LCD.lst) OMF2 TABS(2) OPTIMIZE(8,SPEED) SMALL ROM(SMALL) INCDIR(c:\Users\Harry\Documents\OneDrive - O
+                    -DMAIL\Ñ§Ï°×ÊÁÏ\´ó¶şÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼ş\LCD\code\dependence;c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶ş
+                    -ÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼ş\LCD\code\src;c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶şÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼ş\L
+                    -CD\code\dependence\build-in\STD) DEFINE(__UVISION_VERSION) OBJECT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó
+                    -¶şÏÂÑ§ÆÚ\Î¢»úÔ­Àí\¹¦ÄÜ×é¼ş\LCD\code\out\LCD.o)
+
+line level    source
+
+   1          #include "reg51.h"
+   2          #include "LCD.h"
+   3          
+   4          
+   5          void delay()
+   6          {
+   7   1          uchar j=0;
+   8   1          for(j=0;j<255;j++);
+   9   1      }
+  10          
+  11          void write_char(uchar dat)
+  12          {
+  13   1          // ¸ù¾İÊ±ĞòÍ¼
+  14   1          RS = 1;
+  15   1          RW = 0;
+  16   1          E  = 0;
+  17   1          LCD_PORT = dat;
+  18   1          delay();
+  19   1          delay();
+  20   1          E = 1;
+  21   1          E = 0;
+  22   1      }
+  23          
+  24          void write_cmd(uchar command)
+  25          {
+  26   1          RS = 0;
+  27   1          RW = 0;
+  28   1          E  = 0;
+  29   1          LCD_PORT = command;
+  30   1          delay();
+  31   1          E = 1;
+  32   1          E = 0;
+  33   1      }
+  34          
+  35          void init_LCD()
+  36          {
+  37   1          write_cmd(0x38);    // ÉèÖÃ16¡Á2ÏÔÊ¾£¬5¡Á7µãÕó£¬8Î»Êı¾İ½Ó¿Ú
+  38   1          write_cmd(0x0c);    // ÉèÖÃ¿ªÏÔÊ¾£¬²»ÏÔÊ¾¹â±ê
+  39   1          write_cmd(0x06);    // Ğ´Ò»¸ö×Ö·ûºóµØÖ·Ö¸Õë¼Ó1
+  40   1          write_cmd(0x01);    // ÏÔÊ¾Çå0£¬Êı¾İÖ¸ÕëÇå0
+  41   1      }
+  42          
+  43          
+  44          /**
+  45           * @brief  ÔÚÆÁÄ»ÉÏÏÔÊ¾×Ö·û´®  
+  46           * @param  line: ĞèÒªÏÔÊ¾µÄĞĞÊı
+  47           * @param  *str: ×Ö·û´®µÄÊ×µØÖ·
+  48           */
+  49          void display_LCD(uchar line,char *str)
+C51 COMPILER V9.52.0.0   LCD                                                               04/20/2020 08:44:08 PAGE 2   
+
+  50          {
+  51   1          uchar i = 0;
+  52   1          if (line == 1)
+  53   1              write_cmd(0x80);         // LCDµÚÒ»ĞĞµÄÆğÊ¼µØÖ·
+  54   1          if (line == 2)
+  55   1              write_cmd(0x80+0x40);    // LCDµÚ¶şĞĞµÄÆğÊ¼µØÖ·
+  56   1          while(str[i]!='\0')
+  57   1          {
+  58   2              write_char(str[i]);
+  59   2              i++;
+  60   2          }
+  61   1      }
+  62          
+  63          void clear_LCD()
+  64          {
+  65   1          write_cmd(0x01);    // ÏÔÊ¾Çå0£¬Êı¾İÖ¸ÕëÇå0
+  66   1      }
+  67          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    105    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       3
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

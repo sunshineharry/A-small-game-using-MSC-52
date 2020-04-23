@@ -1,0 +1,38 @@
+{
+    "name": "TIM",
+    "threadNum": 8,
+    "incDirs": [
+        "c:\\Users\\Harry\\Desktop\\TIM\\TIM\\dependence",
+        "c:\\Users\\Harry\\Desktop\\TIM\\TIM\\src",
+        "c:\\Users\\Harry\\Desktop\\TIM\\TIM\\dependence\\build-in\\STD"
+    ],
+    "sourceDirs": [
+        "c:\\Users\\Harry\\Desktop\\TIM\\TIM\\src",
+        "c:\\Users\\Harry\\Desktop\\TIM\\TIM\\dependence"
+    ],
+    "defines": [],
+    "options": {
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [
+            {
+                "name": "clean",
+                "command": "del \"${OutDir}\\*._*\""
+            }
+        ],
+        "global": {
+            "ram-mode": "LARGE",
+            "rom-mode": "LARGE"
+        },
+        "c/cpp-compiler": {
+            "optimization-type": "SPEED",
+            "optimization-level": "level-8",
+            "optimization": "8,SPEED"
+        },
+        "asm-compiler": {},
+        "linker": {
+            "misc-controls": [
+                "REMOVEUNUSED"
+            ]
+        }
+    }
+}

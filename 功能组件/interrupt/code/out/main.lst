@@ -1,0 +1,60 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              04/21/2020 12:17:41 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN c:\Users\Harry\Desktop\interrupt\code\out\main.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe C:\USERS\HARRY\DESKTOP\INTERRUPT\CODE\SRC\MAIN.C PRINT(c:\Use
+                    -rs\Harry\Desktop\interrupt\code\out\main.lst) OMF2 TABS(2) OPTIMIZE(8,SPEED) SMALL ROM(SMALL) INCDIR(c:\Users\Harry\Desk
+                    -top\interrupt\code\dependence;c:\Users\Harry\Desktop\interrupt\code\src;c:\Users\Harry\Desktop\interrupt\code\dependence
+                    -\build-in\STD) DEFINE(__UVISION_VERSION) OBJECT(c:\Users\Harry\Desktop\interrupt\code\out\main.o)
+
+line level    source
+
+   1          #include "REG51.H"
+   2          #include "interrupt.h"
+   3          
+   4          unsigned char s[]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x7F,0x6F};
+   5          unsigned char num = 0;
+   6          
+   7          void init_ex0()
+   8          {
+   9   1          IT0 = 1;    //±ßÑØ´¥·¢
+  10   1          EX0 = 1;
+  11   1          EA = 1;
+  12   1      }
+  13          
+  14          void main()
+  15          {
+  16   1          init_ex0();
+  17   1          while (1)
+  18   1          {
+  19   2              P2 = s[num];
+  20   2              if (num == 10)
+  21   2              {
+  22   3                  num = 0;
+  23   3              }
+  24   2          }
+  25   1      }
+  26          
+  27          void ex_isr() interrupt 0
+  28          {
+  29   1          num++;
+  30   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     32    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     10    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

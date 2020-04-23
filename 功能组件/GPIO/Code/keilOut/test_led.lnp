@@ -1,0 +1,4 @@
+".\keilOut\main.obj" 
+TO ".\keilOut\test_led" 
+
+PRINT(".\Listings\test_led.map")

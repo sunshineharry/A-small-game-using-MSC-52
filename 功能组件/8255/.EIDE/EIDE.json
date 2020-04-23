@@ -1,0 +1,57 @@
+{
+    "name": "8155&8255",
+    "type": "C51",
+    "mode": "Release",
+    "toolchain": "Keil_C51",
+    "uploader": "stcgal",
+    "dependenceList": [
+        {
+            "groupName": "custom",
+            "depList": [
+                {
+                    "name": "default",
+                    "incList": [
+                        ".\\dependence",
+                        ".\\src",
+                        ".\\dependence\\build-in\\STD"
+                    ],
+                    "libList": [],
+                    "sourceDirList": [],
+                    "defineList": []
+                }
+            ]
+        },
+        {
+            "groupName": "build-in",
+            "depList": [
+                {
+                    "name": "STD",
+                    "incList": [
+                        "C:\\Program Files\\Keil\\C51\\INC",
+                        ".\\dependence\\build-in\\STD"
+                    ],
+                    "sourceDirList": [
+                        ".\\dependence\\build-in\\STD"
+                    ],
+                    "libList": [
+                        "C:\\Program Files\\Keil\\C51\\LIB"
+                    ],
+                    "defineList": []
+                }
+            ]
+        }
+    ],
+    "compileConfig": {
+        "options": ""
+    },
+    "srcDirs": [
+        ".\\src",
+        ".\\dependence"
+    ],
+    "outDir": ".\\out",
+    "uploadConfig": {
+        "bin": "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\作业\\hard\\out\\hard.hex",
+        "eepromImgPath": "undefined",
+        "options": "./.EIDE/stc.flash.json"
+    }
+}

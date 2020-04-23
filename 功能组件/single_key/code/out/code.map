@@ -1,0 +1,147 @@
+LX51 LINKER/LOCATER V4.66.1.0                                                           04/20/2020  14:20:50  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
+C:\PROGRAM FILES\KEIL\C51\BIN\LX51.EXE c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\
+>> single_key\code\out\main.o, c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_k
+>> ey\code\out\single_key.o, c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_key
+>> \code\out\STARTUP.o TO c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_key\co
+>> de\out\code PRINT (c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_key\code\o
+>> ut\code.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_key\code\out\main.o (MAIN)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_key\code\out\single_key.o (SIN
+>> GLE_KEY)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_key\code\out\STARTUP.o (?C_STA
+>> RTUP)
+         COMMENT TYPE 0: AX51 V3.10
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\singl
+>> e_key\code\out\code (MAIN)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   0000C6H   CODE
+I:000000H   I:000000H   I:00007FH   000012H   DATA
+I:000020H.0 I:000020H.0 I:00002FH.7 000000H.1 BIT
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_key\code\
+>> out\code (MAIN)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000011H   00000AH   BYTE   UNIT     DATA           ?DT?MAIN
+000012H.0 00001FH.7 00000EH.0 ---    ---      **GAP**
+000020H.0 000020H.0 000000H.1 BIT    UNIT     BIT            _BIT_GROUP_
+000020H.1 000020H   000000H.7 ---    ---      **GAP**
+000021H   000021H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO?STARTUP?3
+000003H   000017H   000015H   BYTE   INBLOCK  CODE           ?PR?IS_SINGLE_KEY_PRESS?SINGLE_KEY
+000018H   000021H   00000AH   BYTE   INBLOCK  CODE           ?PR?MAIN?MAIN
+000022H   00002AH   000009H   BYTE   INBLOCK  CODE           ?PR?SEG?MAIN
+00002BH   0000B6H   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+0000B7H   0000C5H   00000FH   BYTE   UNIT     CODE           ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_key\cod
+>> e\out\code (MAIN)
+
+
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/20/2020  14:20:50  PAGE 2
+
+
+FUNCTION/MODULE                      BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE          START  STOP  START  STOP
+============================================================
+?C_C51STARTUP                       ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                           ----- -----  ----- -----
+  +--> IS_SINGLE_KEY_PRESS/SINGLE_KEY
+  +--> SEG/MAIN
+
+IS_SINGLE_KEY_PRESS/SINGLE_KEY      20H.0 20H.0  ----- -----
+
+SEG/MAIN                            ----- -----  ----- -----
+
+?C_INITSEG                          ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_key\c
+>> ode\out\code (MAIN)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000072H   CODE     ---       ?C_START
+      01000000H   CODE     NEAR LAB  ?C_STARTUP
+      01000003H   CODE     ---       is_single_key_press
+      01000018H   CODE     ---       main
+      00000008H   DATA     BYTE      num
+      00000009H   DATA     ---       s
+      01000022H   CODE     ---       seg
+
+
+
+SYMBOL TABLE OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\single_key\cod
+>> e\out\code (MAIN)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       MAIN
+      00000009H   PUBLIC    DATA     ---       s
+      00000008H   PUBLIC    DATA     BYTE      num
+      01000018H   PUBLIC    CODE     ---       main
+      01000022H   PUBLIC    CODE     ---       seg
+
+      01000022H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000018H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       SINGLE_KEY
+      01000003H   PUBLIC    CODE     ---       is_single_key_press
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      01000003H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000020H.0 SYMBOL    BIT      VOID      is_press
+      00000007H   SYMBOL    DATA     VOID      flag
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/20/2020  14:20:50  PAGE 3
+
+
+      01000000H   PUBLIC    CODE     NEAR LAB  ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01000072H   PUBLIC    CODE     ---       ?C_START
+
+Program Size: data=19.1 xdata=0 const=0 code=198
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

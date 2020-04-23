@@ -1,0 +1,38 @@
+{
+    "name": "code",
+    "threadNum": 8,
+    "incDirs": [
+        "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\LCD\\code\\dependence",
+        "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\LCD\\code\\src",
+        "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\LCD\\code\\dependence\\build-in\\STD"
+    ],
+    "sourceDirs": [
+        "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\LCD\\code\\src",
+        "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\LCD\\code\\dependence"
+    ],
+    "defines": [],
+    "options": {
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [
+            {
+                "name": "clean",
+                "command": "del \"${OutDir}\\*._*\""
+            }
+        ],
+        "global": {
+            "ram-mode": "SMALL",
+            "rom-mode": "SMALL"
+        },
+        "c/cpp-compiler": {
+            "optimization-type": "SPEED",
+            "optimization-level": "level-8",
+            "optimization": "8,SPEED"
+        },
+        "asm-compiler": {},
+        "linker": {
+            "misc-controls": [
+                "REMOVEUNUSED"
+            ]
+        }
+    }
+}

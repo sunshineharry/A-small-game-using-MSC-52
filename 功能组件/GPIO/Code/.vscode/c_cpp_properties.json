@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\GPIO\\Code\\dependence",
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\GPIO\\Code\\src",
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\GPIO\\Code\\dependence\\build-in",
+                "C:\\Program Files\\Keil\\C51\\INC",
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\GPIO\\Code\\dependence\\build-in\\toolchain"
+            ],
+            "defines": [
+                "__C51__",
+                "reentrant=",
+                "conpact=",
+                "small=",
+                "large=",
+                "data=",
+                "idata=",
+                "pdata=",
+                "xdata=",
+                "code=",
+                "bit=char",
+                "sbit=char",
+                "sfr=char",
+                "sfr16=int",
+                "sfr32=int"
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

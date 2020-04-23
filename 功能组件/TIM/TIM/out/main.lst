@@ -1,0 +1,71 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              04/16/2020 19:15:22 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN c:\Users\Harry\Desktop\TIM\TIM\out\main.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe C:\USERS\HARRY\DESKTOP\TIM\TIM\SRC\MAIN.C PRINT(c:\Users\Harr
+                    -y\Desktop\TIM\TIM\out\main.lst) OMF2 TABS(2) OPTIMIZE(8,SPEED) LARGE ROM(LARGE) INCDIR(c:\Users\Harry\Desktop\TIM\TIM\de
+                    -pendence;c:\Users\Harry\Desktop\TIM\TIM\src;c:\Users\Harry\Desktop\TIM\TIM\dependence\build-in\STD) DEFINE(__UVISION_VER
+                    -SION) OBJECT(c:\Users\Harry\Desktop\TIM\TIM\out\main.o)
+
+line level    source
+
+   1          #include "REG51.H"
+   2          
+   3          unsigned char s[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f};
+   4          unsigned char count;
+   5          
+   6          void init_TIM_0(void)
+   7          {
+   8   1          // ³õÊ¼»¯ TMOD ¼Ä´æÆ÷
+   9   1          TMOD = TMOD | 0x01;
+  10   1          TH0 = (65536 - 50000) / 256;
+  11   1          TL0 = (65536 - 50000) % 256;
+  12   1          ET0 = 1;
+  13   1          EA = 1;
+  14   1          TR0 = 1;
+  15   1      }
+  16          
+  17          void display()
+  18          {
+  19   1          unsigned char tmp;
+  20   1          tmp = count % 10;
+  21   1          P2 = s[tmp];
+  22   1      }
+  23          
+  24          void main()
+  25          {
+  26   1          init_TIM_0();
+  27   1          while (1)
+  28   1          {
+  29   2              display();
+  30   2          }
+  31   1          
+  32   1      }
+  33          
+  34          void TIM_0_isr() interrupt 1
+  35          {
+  36   1          TH0 = (65536 - 50000) / 256;
+  37   1          TL0 = (65536 - 50000) % 256;
+  38   1          count++;
+  39   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     76    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =     11    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+C51 COMPILER V9.52.0.0   MAIN                                                              04/16/2020 19:15:22 PAGE 2   
+
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

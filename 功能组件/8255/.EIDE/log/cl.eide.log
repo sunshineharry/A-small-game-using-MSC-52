@@ -1,0 +1,220 @@
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/11|08:44:28|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/11|08:44:36|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/11|11:28:43|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/11|14:00:32|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/11|14:20:27|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/11|14:26:44|GMT+0800
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Language client is not ready yet
+	at LanguageClient.sendNotification (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:7051:19)
+	at DefaultClient.onInterval (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:36602:33)
+	at Timeout.onInterval [as _onTimeout] (c:\Users\Harry\.vscode\extensions\ms-vscode.cpptools-0.27.0\dist\main.js:4624:26)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/11|14:33:16|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/15|13:45:16|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/19|15:02:38|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/20|08:35:25|GMT+0800
+
+

@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "c:\\Users\\Harry\\Desktop\\TIM\\TIM\\dependence",
+                "c:\\Users\\Harry\\Desktop\\TIM\\TIM\\src",
+                "C:\\Program Files\\Keil\\C51\\INC",
+                "c:\\Users\\Harry\\Desktop\\TIM\\TIM\\dependence\\build-in\\STD"
+            ],
+            "defines": [],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,41 @@
+C51 COMPILER V9.52.0.0   SINGLE_KEY                                                        04/20/2020 14:23:47 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE SINGLE_KEY
+OBJECT MODULE PLACED IN .\keilOut\single_key.obj
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\single_key.c OMF2 ROM(SMALL) OPTIMIZE(8,SPEED) BROWSE INC
+                    -DIR(.\dependence;.\src) DEBUG PRINT(.\Listings\single_key.lst) OBJECT(.\keilOut\single_key.obj)
+
+line level    source
+
+   1          # include"single_key.h"
+   2          
+   3          
+   4          bit is_single_key_press()
+   5          {
+   6   1          bit is_press = 0;
+   7   1          unsigned char flag = 0;
+   8   1          if (key0 == 0 && flag == 0)
+   9   1              flag = 1;
+  10   1          if (key0 == 1 && flag == 1)
+  11   1              is_press = 1;
+  12   1          return is_press;
+  13   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     21    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----       1
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

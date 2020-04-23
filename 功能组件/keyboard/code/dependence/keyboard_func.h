@@ -1,0 +1,1 @@
+extern unsigned char key_scan();

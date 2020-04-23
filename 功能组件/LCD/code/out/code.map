@@ -1,0 +1,187 @@
+LX51 LINKER/LOCATER V4.66.1.0                                                           04/20/2020  08:44:09  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
+C:\PROGRAM FILES\KEIL\C51\BIN\LX51.EXE c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\
+>> LCD\code\out\LCD.o, c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out\mai
+>> n.o, c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out\STARTUP.o TO c:\Us
+>> ers\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out\code PRINT (c:\Users\Harry\D
+>> ocuments\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out\code.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out\LCD.o (LCD)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out\main.o (MAIN)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out\STARTUP.o (?C_STARTUP)
+         COMMENT TYPE 0: AX51 V3.10
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?CLDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\c
+>> ode\out\code (LCD)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000145H   CODE
+I:000000H   I:000000H   I:00007FH   000018H   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out\cod
+>> e (LCD)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000014H   00000DH   BYTE   UNIT     DATA           ?DT?MAIN
+000015H   000017H   000003H   BYTE   UNIT     DATA           _DATA_GROUP_
+000018H   000018H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO?STARTUP?3
+000003H   000030H   00002EH   BYTE   INBLOCK  CODE           ?PR?_DISPLAY_LCD?LCD
+000031H   000041H   000011H   BYTE   INBLOCK  CODE           ?PR?_WRITE_CHAR?LCD
+000042H   000051H   000010H   BYTE   INBLOCK  CODE           ?PR?INIT_LCD?LCD
+000052H   000061H   000010H   BYTE   INBLOCK  CODE           ?PR?MAIN?MAIN
+000062H   000070H   00000FH   BYTE   INBLOCK  CODE           ?PR?_WRITE_CMD?LCD
+000071H   000077H   000007H   BYTE   INBLOCK  CODE           ?PR?DELAY?LCD
+000078H   00007BH   000004H   BYTE   INBLOCK  CODE           ?PR?CLEAR_LCD?LCD
+00007CH   000107H   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+000108H   000134H   00002DH   BYTE   UNIT     CODE           ?C?LIB_CODE
+000135H   000144H   000010H   BYTE   UNIT     CODE           ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out\c
+>> ode (LCD)
+
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/20/2020  08:44:09  PAGE 2
+
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                   ----- -----  ----- -----
+  +--> INIT_LCD/LCD
+  +--> _DISPLAY_LCD/LCD
+  +--> CLEAR_LCD/LCD
+
+INIT_LCD/LCD                ----- -----  ----- -----
+  +--> _WRITE_CMD/LCD
+
+_WRITE_CMD/LCD              ----- -----  ----- -----
+  +--> DELAY/LCD
+
+DELAY/LCD                   ----- -----  ----- -----
+
+_DISPLAY_LCD/LCD            ----- -----  0015H 0017H
+  +--> _WRITE_CMD/LCD
+  +--> _WRITE_CHAR/LCD
+
+_WRITE_CHAR/LCD             ----- -----  ----- -----
+  +--> DELAY/LCD
+
+CLEAR_LCD/LCD               ----- -----  ----- -----
+  +--> _WRITE_CMD/LCD
+
+?C_INITSEG                  ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out
+>> \code (LCD)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      01000108H   CODE     ---       ?C?CLDOPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      010000C3H   CODE     ---       ?C_START
+      01000000H   CODE     NEAR LAB  ?C_STARTUP
+      01000003H   CODE     ---       _display_LCD
+      01000031H   CODE     ---       _write_char
+      01000062H   CODE     ---       _write_cmd
+      01000078H   CODE     ---       clear_LCD
+      01000071H   CODE     ---       delay
+      01000042H   CODE     ---       init_LCD
+      01000052H   CODE     ---       main
+      00000008H   DATA     ---       str
+
+
+
+SYMBOL TABLE OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\功能组件\LCD\code\out\c
+>> ode (LCD)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       LCD
+      01000078H   PUBLIC    CODE     ---       clear_LCD
+      01000003H   PUBLIC    CODE     ---       _display_LCD
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/20/2020  08:44:09  PAGE 3
+
+
+      01000042H   PUBLIC    CODE     ---       init_LCD
+      01000062H   PUBLIC    CODE     ---       _write_cmd
+      01000031H   PUBLIC    CODE     ---       _write_char
+      01000071H   PUBLIC    CODE     ---       delay
+
+      01000071H   BLOCK     CODE     ---       LVL=0
+      01000071H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000031H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000062H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000042H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      0100000BH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000005H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000078H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MAIN
+      00000008H   PUBLIC    DATA     ---       str
+      01000052H   PUBLIC    CODE     ---       main
+
+      01000052H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     NEAR LAB  ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C_INIT
+      010000C3H   PUBLIC    CODE     ---       ?C_START
+
+      ---         MODULE    ---      ---       ?C?CLDOPTR
+      01000108H   PUBLIC    CODE     ---       ?C?CLDOPTR
+
+Program Size: data=25.0 xdata=0 const=0 code=325
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,6 @@
+".\keilOut\main.obj",
+".\keilOut\single_key.obj",
+".\keilOut\STARTUP.obj" 
+TO ".\keilOut\code" 
+
+PRINT(".\Listings\code.map")

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<WORKSPACE>
+ <FRAME activewindow="0">
+  <PLACEMENT>2c0000000000000001000000ffffffffffffffffffffffffffffffffbdf3ffff25020000abfdffff5f090000</PLACEMENT>
+  <WINDOW type="default" module="ISIS"/>
+ </FRAME>
+ <MODULE name="VSMDEBUG">
+  <PWI>
+   <POPUP w="1187" x="389" flags="00000002" y="193" h="357" pid="0" iid="-1">
+    <PROPERTIES>
+     <ITEM name="Message Column Width">1024</ITEM>
+     <ITEM name="ShowGrid">No</ITEM>
+     <ITEM name="Source Column Width">100</ITEM>
+     <ITEM name="Version">100</ITEM>
+    </PROPERTIES>
+   </POPUP>
+   <POPUP w="1086" x="1704" flags="00000032" y="237" h="419" pid="1" iid="-1">
+    <PROPERTIES>
+     <ITEM name="Address Column Width">176</ITEM>
+     <ITEM name="AutoResize">No</ITEM>
+     <ITEM name="Gridlines">Yes</ITEM>
+     <ITEM name="Item 0">"P2","0x00A0",00000001,00000002,32,1,2,00000002,1,00000000,00000000</ITEM>
+     <ITEM name="Item 1">"ctrl_led","0x04",00000001,00000003,4,1,2,00000002,0,00000000,00000000</ITEM>
+     <ITEM name="Name Column Width">260</ITEM>
+     <ITEM name="ShowAddresses">Yes</ITEM>
+     <ITEM name="ShowPreviousValues">No</ITEM>
+     <ITEM name="ShowTypes">Yes</ITEM>
+     <ITEM name="ShowWatchPoint">Yes</ITEM>
+     <ITEM name="TriggerMode">0</ITEM>
+     <ITEM name="Type Column Width">146</ITEM>
+     <ITEM name="Value Column Width">163</ITEM>
+     <ITEM name="Version">100</ITEM>
+     <ITEM name="Watch Expression Column Width">255</ITEM>
+     <ITEM name="WatchPoint 0">0,0,00000000,</ITEM>
+     <ITEM name="nItems">2</ITEM>
+    </PROPERTIES>
+   </POPUP>
+   <POPUP w="338" x="665" flags="00000008" y="733" h="428" pid="1" iid="1">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP w="8" x="0" flags="0000000a" y="45" h="16" pid="3" iid="1">
+    <PROPERTIES>
+     <ITEM name="DataType">2</ITEM>
+     <ITEM name="DispChars">Yes</ITEM>
+     <ITEM name="DispFormat">2</ITEM>
+     <ITEM name="ShowChanges">Yes</ITEM>
+     <ITEM name="ShowToolTips">Yes</ITEM>
+     <ITEM name="TopLineAddress">00000000</ITEM>
+    </PROPERTIES>
+   </POPUP>
+   <POPUP w="8" x="0" flags="0000000a" y="45" h="16" pid="2" iid="1">
+    <PROPERTIES>
+     <ITEM name="DataType">2</ITEM>
+     <ITEM name="DispChars">Yes</ITEM>
+     <ITEM name="DispFormat">2</ITEM>
+     <ITEM name="ShowChanges">Yes</ITEM>
+     <ITEM name="ShowToolTips">Yes</ITEM>
+     <ITEM name="TopLineAddress">00000080</ITEM>
+    </PROPERTIES>
+   </POPUP>
+  </PWI>
+ </MODULE>
+</WORKSPACE>

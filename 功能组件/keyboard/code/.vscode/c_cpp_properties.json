@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "c:\\Users\\Harry\\Desktop\\keyboard\\code\\dependence",
+                "c:\\Users\\Harry\\Desktop\\keyboard\\code\\src",
+                "C:\\Program Files\\Keil\\C51\\INC",
+                "c:\\Users\\Harry\\Desktop\\keyboard\\code\\dependence\\build-in\\STD"
+            ],
+            "defines": [
+                "__C51__",
+                "reentrant=",
+                "conpact=",
+                "small=",
+                "large=",
+                "data=",
+                "idata=",
+                "pdata=",
+                "xdata=",
+                "code=",
+                "bit=char",
+                "sbit=char",
+                "sfr=char",
+                "sfr16=int",
+                "sfr32=int"
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

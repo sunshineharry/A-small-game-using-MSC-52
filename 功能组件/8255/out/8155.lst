@@ -1,0 +1,70 @@
+C51 COMPILER V9.00   8155                                                                  04/11/2020 14:28:30 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE 8155
+OBJECT MODULE PLACED IN c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\×÷Òµ\hard\out\8155.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§Æ
+                    -Ú\Î¢»úÔ­Àí\×÷Òµ\hard\src\8155.c PRINT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\×÷Òµ\hard\
+                    -out\8155.lst) OMF2 TABS(2) OPTIMIZE(8,SPEED) LARGE ROM(LARGE) INCDIR(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ
+                    -\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\×÷Òµ\hard\dependence;c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\×÷Òµ\h
+                    -ard\src;c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\×÷Òµ\hard\dependence\build-in\STD) DEFIN
+                    -E(__UVISION_VERSION) OBJECT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\×÷Òµ\hard\out\8155.o
+                    -)
+
+line level    source
+
+   1          #include "8155.H"
+   2          
+   3          /**
+   4           * @brief  ÉèÖÃ8155µÄ¹¤×÷×´Ì¬
+   5           * @note   
+   6           * @param  command_2_8155: ÉèÖÃ8155¹¤×÷×´Ì¬µÄ²ÎÊý
+   7           * @retval None
+   8           */
+   9          void Set8155(uchar command_2_8155)
+  10          {
+  11   1          CMD_8155 = command_2_8155;
+  12   1      }
+  13          
+  14          /**
+  15           * @brief  ½«Êý¾ÝÐ´ÈëPA,PB,PC¿Ú
+  16           * @note   
+  17           * @param  white_line: ÒªÐ´ÈëµÄÊý¾Ý
+  18           * @retval None
+  19           */
+  20          void WritePA(uchar white_line)
+  21          {
+  22   1          PA_8155 = white_line;
+  23   1      }
+  24          
+  25          void WritePB(uchar white_line)
+  26          {
+  27   1          PB_8155 = white_line;
+  28   1      }
+  29          
+  30          void WritePC(uchar white_line)
+  31          {
+  32   1          PC_8155 = white_line;
+  33   1      }
+  34          
+  35          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     24    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+C51 COMPILER V9.00   8155                                                                  04/11/2020 14:28:30 PAGE 2   
+
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
