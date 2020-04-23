@@ -3,10 +3,10 @@
         {
             "name": "win32",
             "includePath": [
-                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\single_key\\code\\dependence",
-                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\single_key\\code\\src",
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\仿真实验\\功能组件\\single_key\\code\\dependence",
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\仿真实验\\功能组件\\single_key\\code\\src",
                 "C:\\Program Files\\Keil\\C51\\INC",
-                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\功能组件\\single_key\\code\\dependence\\build-in\\STD"
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\仿真实验\\功能组件\\single_key\\code\\dependence\\build-in\\toolchain"
             ],
             "defines": [
                 "__C51__",

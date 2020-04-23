@@ -262,3 +262,34 @@
 
 
 [12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/23|19:45:45|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/23|20:02:47|GMT+0800
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/23|20:15:50|GMT+0800
+[Warning] : Error: parse workspace configuration error !
+	at t.WorkspaceConfiguration.Parse (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:108788)
+	at t.WorkspaceConfiguration.Update (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:85832)
+	at t.WorkspaceConfiguration.Init (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:85194)
+	at new v (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:85162)
+	at new t.WorkspaceConfiguration (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:108664)
+	at M.LoadConfigurations (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70617)
+	at M.Load (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:66030)
+	at E._OpenProject (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:167890)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:160935)
+	at EventEmitter.emit (events.js:203:13)
+	at Function.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:4467)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:132132)
+	at EventEmitter.emit (events.js:203:13)
+	at Function.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:4467)
+	at E.LoadWorkspaceProject (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:160975)
+	at new E (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:160588)
+	at new t.ProjectExplorer (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:172173)
+	at t.activate (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:136385)
+	at Function._callActivateOptional (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:788:244)
+	at Function._callActivate (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:787:909)
+	at c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:786:960
+	at async Promise.all (index 8)
+
+

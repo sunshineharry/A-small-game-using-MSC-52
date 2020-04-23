@@ -10,12 +10,6 @@
         "C_Cpp.default.cppStandard": "c++11",
         "C_Cpp.default.cStandard": "c99",
         "C_Cpp.errorSquiggles": "Disabled",
-        "EIDE.ARM.Option.AutoGenerateRTE_Components": false,
-        "files.associations": {
-            "*.m": "matlab",
-            "*.h": "c",
-            "MATH.H": "cpp",
-            "STDLIB.H": "cpp"
-        }
+        "EIDE.ARM.Option.AutoGenerateRTE_Components": false
     }
 }
