@@ -1,0 +1,9 @@
+[includes]
+c:\Users\Harry\Desktop\mouse\code\dependence
+c:\Users\Harry\Desktop\mouse\code\src
+c:\Users\Harry\Desktop\mouse\code\dependence\build-in\toolchain
+[sourceList]
+c:\Users\Harry\Desktop\mouse\code\src\interrupt.c
+c:\Users\Harry\Desktop\mouse\code\src\keyboard.c
+c:\Users\Harry\Desktop\mouse\code\src\LCD.c
+c:\Users\Harry\Desktop\mouse\code\src\main.c

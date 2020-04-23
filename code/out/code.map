@@ -1,0 +1,327 @@
+LX51 LINKER/LOCATER V4.66.1.0                                                           04/21/2020  22:49:40  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
+C:\PROGRAM FILES\KEIL\C51\BIN\LX51.EXE C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\INTERRUPT.O, C:\USERS\HARRY\DESKTOP\MOUSE\C
+>> ODE\OUT\KEYBOARD.O, C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\LCD.O, C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\MAIN.O TO C:\U
+>> SERS\HARRY\DESKTOP\MOUSE\CODE\OUT\CODE PRINT (c:\Users\Harry\Desktop\mouse\code\out\code.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\INTERRUPT.O (INTERRUPT)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\KEYBOARD.O (KEYBOARD)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\LCD.O (LCD)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?CLDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?CSTPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\CODE (INTERRUPT)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000240H   CODE
+I:000000H   I:000000H   I:00007FH   000014H   DATA
+I:000020H.0 I:000020H.0 I:00002FH.7 000000H.3 BIT
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\CODE (INTERRUPT)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   00000EH   000007H   BYTE   UNIT     DATA           _DATA_GROUP_
+00000FH   000012H   000004H   BYTE   UNIT     DATA           ?DT?LCD
+000013H   000013H   000001H   BYTE   UNIT     DATA           ?DT?MAIN
+000014H.0 00001FH.7 00000CH.0 ---    ---      **GAP**
+000020H.0 000020H.1 000000H.2 BIT    UNIT     BIT            _BIT_GROUP_
+000020H.2 000020H.2 000000H.1 BIT    UNIT     BIT            ?BI?MAIN
+000020H.3 000020H   000000H.5 ---    ---      **GAP**
+000021H   000021H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   000004H   000002H   BYTE   OFFS..   CODE           ?MAIN?00003
+000005H   000009H   000005H   BYTE   INBLOCK  CODE           ?PR?_WRITE_CHAR?LCD
+00000AH   00000AH   000001H   ---    ---      **GAP**
+00000BH   00000CH   000002H   BYTE   OFFS..   CODE           ?MAIN?0000B
+00000DH   000011H   000005H   BYTE   INBLOCK  CODE           ?PR?_WRITE_CMD?LCD
+000012H   000012H   000001H   ---    ---      **GAP**
+000013H   000014H   000002H   BYTE   OFFS..   CODE           ?MAIN?00013
+000015H   00005FH   00004BH   BYTE   INBLOCK  CODE           ?PR?PAUSE?MAIN
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/21/2020  22:49:40  PAGE 2
+
+
+000060H   00009DH   00003EH   BYTE   INBLOCK  CODE           ?PR?CONTINUEE?MAIN
+00009EH   0000C2H   000025H   BYTE   INBLOCK  CODE           ?PR?LCD
+0000C3H   0000E2H   000020H   BYTE   INBLOCK  CODE           ?PR?_DISPLAY_LCD?LCD
+0000E3H   0000FBH   000019H   BYTE   INBLOCK  CODE           ?PR?TIM_0_ISR?MAIN
+0000FCH   00010CH   000011H   BYTE   INBLOCK  CODE           ?PR?MAIN?MAIN
+00010DH   00011CH   000010H   BYTE   INBLOCK  CODE           ?PR?INIT_TIM_0?INTERRUPT
+00011DH   00012CH   000010H   BYTE   INBLOCK  CODE           ?PR?INIT_LCD?LCD
+00012DH   00013BH   00000FH   BYTE   INBLOCK  CODE           ?PR?CLEAR_LCD?LCD
+00013CH   000148H   00000DH   BYTE   INBLOCK  CODE           ?PR?DELAY?LCD
+000149H   000151H   000009H   BYTE   INBLOCK  CODE           ?PR?INIT_EX0?INTERRUPT
+000152H   00015AH   000009H   BYTE   INBLOCK  CODE           ?PR?INIT_EX1?INTERRUPT
+00015BH   000162H   000008H   BYTE   INBLOCK  CODE           ?PR?INIT?MAIN
+000163H   0001EEH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+0001EFH   00022DH   00003FH   BYTE   UNIT     CODE           ?C?LIB_CODE
+00022EH   00023BH   00000EH   BYTE   UNIT     CODE           ?CO?MAIN
+00023CH   000241H   000006H   BYTE   UNIT     CODE           ?C_INITSEG
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+   *DEL*:           000023H   BYTE   INBLOCK  CODE           ?PR?KEY_SCAN?KEYBOARD
+   *DEL*:           000009H   BYTE   INBLOCK  CODE           ?PR?_DISPLAY_LCD_SINGLE?LCD
+   *DEL*:           000001H   BYTE   UNIT     DATA           ?DT?_DISPLAY_LCD_SINGLE?LCD
+   *DEL*:           000041H   BYTE   INBLOCK  CODE           ?PR?_CHAR2STRING?LCD
+
+
+
+OVERLAY MAP OF MODULE:   C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\CODE (INTERRUPT)
+
+
+FUNCTION/MODULE               BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE   START  STOP  START  STOP
+=====================================================
+PAUSE/MAIN                   ----- -----  ----- -----
+  +--> CLEAR_LCD/LCD
+  +--> ?CO?MAIN
+  +--> _DISPLAY_LCD/LCD
+
+CLEAR_LCD/LCD                20H.1 20H.1  ----- -----
+  +--> _WRITE_CMD/LCD
+
+_WRITE_CMD/LCD               ----- -----  ----- -----
+  +--> LCD
+
+LCD                          ----- -----  ----- -----
+  +--> DELAY/LCD
+
+DELAY/LCD                    ----- -----  ----- -----
+
+?CO?MAIN                     ----- -----  ----- -----
+
+_DISPLAY_LCD/LCD             ----- -----  000CH 000EH
+  +--> _WRITE_CMD/LCD
+  +--> _WRITE_CHAR/LCD
+
+_WRITE_CHAR/LCD              ----- -----  ----- -----
+  +--> LCD
+
+*** NEW ROOT ***************
+
+CONTINUEE/MAIN               ----- -----  ----- -----
+  +--> CLEAR_LCD/LCD
+
+*** NEW ROOT ***************
+
+TIM_0_ISR/MAIN               ----- -----  ----- -----
+
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/21/2020  22:49:40  PAGE 3
+
+
+*** NEW ROOT ***************
+
+?C_C51STARTUP                ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                    ----- -----  000BH 000BH
+  +--> INIT/MAIN
+  +--> ?CO?MAIN
+  +--> _DISPLAY_LCD/LCD
+
+INIT/MAIN                    ----- -----  ----- -----
+  +--> INIT_LCD/LCD
+  +--> INIT_EX0/INTERRUPT
+  +--> INIT_EX1/INTERRUPT
+  +--> INIT_TIM_0/INTERRUPT
+
+INIT_LCD/LCD                 ----- -----  ----- -----
+  +--> _WRITE_CMD/LCD
+
+INIT_EX0/INTERRUPT           ----- -----  ----- -----
+
+INIT_EX1/INTERRUPT           ----- -----  ----- -----
+
+INIT_TIM_0/INTERRUPT         ----- -----  ----- -----
+
+?C_INITSEG                   ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\CODE (INTERRUPT)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      010001EFH   CODE     ---       ?C?CLDOPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      0100021CH   CODE     ---       ?C?CSTPTR
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      010001AAH   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      00000020H.1 BIT      BIT       ?clear_LCD?BIT
+*DEL*:00000000H   CODE     ---       _char2string
+      010000C3H   CODE     ---       _display_LCD
+*DEL*:00000000H   CODE     ---       _display_LCD_single
+      01000005H   CODE     ---       _write_char
+      0100000DH   CODE     ---       _write_cmd
+      0100012DH   CODE     ---       clear_LCD
+      01000060H   CODE     ---       continuee
+      00000013H   DATA     BYTE      count
+      0100013CH   CODE     ---       delay
+      0100015BH   CODE     ---       init
+      01000149H   CODE     ---       init_ex0
+      01000152H   CODE     ---       init_ex1
+      0100011DH   CODE     ---       init_LCD
+      0100010DH   CODE     ---       init_TIM_0
+      00000020H.2 BIT      BIT       is_pause
+*DEL*:00000000H   CODE     ---       key_scan
+      010000FCH   CODE     ---       main
+      01000015H   CODE     ---       pause
+      0000000FH   DATA     ---       str
+      010000E3H   CODE     ---       TIM_0_isr
+
+
+
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/21/2020  22:49:40  PAGE 4
+
+
+SYMBOL TABLE OF MODULE:  C:\USERS\HARRY\DESKTOP\MOUSE\CODE\OUT\CODE (INTERRUPT)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       INTERRUPT
+      0100010DH   PUBLIC    CODE     ---       init_TIM_0
+      01000152H   PUBLIC    CODE     ---       init_ex1
+      01000149H   PUBLIC    CODE     ---       init_ex0
+
+      01000149H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000152H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100010DH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       KEYBOARD
+      00000007H   SYMBOL    DATA     VOID      num
+      00000006H   SYMBOL    DATA     VOID      tmp_1
+      00000005H   SYMBOL    DATA     VOID      tmp_2
+      00000004H   SYMBOL    DATA     VOID      flag
+
+      ---         MODULE    ---      ---       LCD
+      0000000FH   PUBLIC    DATA     ---       str
+      00000020H.1 PUBLIC    BIT      BIT       ?clear_LCD?BIT
+      0100012DH   PUBLIC    CODE     ---       clear_LCD
+      010000C3H   PUBLIC    CODE     ---       _display_LCD
+      0100011DH   PUBLIC    CODE     ---       init_LCD
+      0100000DH   PUBLIC    CODE     ---       _write_cmd
+      01000005H   PUBLIC    CODE     ---       _write_char
+      0100013CH   PUBLIC    CODE     ---       delay
+
+      0100009EH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100013CH   BLOCK     CODE     ---       LVL=0
+      0100013CH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     VOID      j
+      00000006H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000005H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100000DH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100011DH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010000C3H   BLOCK     CODE     ---       LVL=0
+      010000C9H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000005H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100012DH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+      00000001H   SYMBOL    DATA     VOID      pStr
+
+      ---         MODULE    ---      ---       MAIN
+      00000020H.2 PUBLIC    BIT      BIT       is_pause
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/21/2020  22:49:40  PAGE 5
+
+
+      00000013H   PUBLIC    DATA     BYTE      count
+      010000E3H   PUBLIC    CODE     ---       TIM_0_isr
+      01000060H   PUBLIC    CODE     ---       continuee
+      01000015H   PUBLIC    CODE     ---       pause
+      010000FCH   PUBLIC    CODE     ---       main
+      0100015BH   PUBLIC    CODE     ---       init
+
+      0100015BH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010000FCH   BLOCK     CODE     ---       LVL=0
+      010000FCH   BLOCK     CODE     NEAR LAB  LVL=1
+      0000000BH   SYMBOL    DATA     VOID      num
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000015H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000060H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010000E3H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?CLDOPTR
+      010001EFH   PUBLIC    CODE     ---       ?C?CLDOPTR
+
+      ---         MODULE    ---      ---       ?C?CSTPTR
+      0100021CH   PUBLIC    CODE     ---       ?C?CSTPTR
+
+      ---         MODULE    ---      ---       ?C_INIT
+      010001AAH   PUBLIC    CODE     ---       ?C_START
+
+
+
+*** WARNING L15: MULTIPLE CALL TO FUNCTION
+    NAME:    CLEAR_LCD/LCD
+    CALLER1: PAUSE/MAIN
+    CALLER2: CONTINUEE/MAIN
+
+*** WARNING L15: MULTIPLE CALL TO FUNCTION
+    NAME:    _DISPLAY_LCD/LCD
+    CALLER1: PAUSE/MAIN
+    CALLER2: ?C_C51STARTUP
+
+Program Size: data=21.3 xdata=0 const=0 code=576
+LX51 RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)

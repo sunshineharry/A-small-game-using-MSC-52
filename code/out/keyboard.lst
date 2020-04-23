@@ -1,0 +1,53 @@
+C51 COMPILER V9.52.0.0   KEYBOARD                                                          04/21/2020 22:49:40 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE KEYBOARD
+OBJECT MODULE PLACED IN c:\Users\Harry\Desktop\mouse\code\out\keyboard.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe C:\USERS\HARRY\DESKTOP\MOUSE\CODE\SRC\KEYBOARD.C PRINT(c:\Use
+                    -rs\Harry\Desktop\mouse\code\out\keyboard.lst) OMF2 TABS(2) OPTIMIZE(9,SIZE) SMALL ROM(SMALL) INCDIR(c:\Users\Harry\Deskt
+                    -op\mouse\code\dependence;c:\Users\Harry\Desktop\mouse\code\src;c:\Users\Harry\Desktop\mouse\code\dependence\build-in\too
+                    -lchain) DEFINE(__UVISION_VERSION) OBJECT(c:\Users\Harry\Desktop\mouse\code\out\keyboard.o)
+
+line level    source
+
+   1          #include "REG52.H"
+   2          #include "keyboard.h"
+   3          
+   4          
+   5          unsigned char key_scan()
+   6          {
+   7   1          unsigned char num = 0xff;
+   8   1          unsigned char tmp_1 = 0, tmp_2 = 0, flag = 0;
+   9   1          KEY_PORT = 0xf0;
+  10   1          // 检测按键是否被按下
+  11   1          if (KEY_PORT != 0xf0)
+  12   1          {
+  13   2              tmp_1 = KEY_PORT;
+  14   2              flag = 1;
+  15   2              KEY_PORT = 0x0f;
+  16   2          }
+  17   1          if ((KEY_PORT != 0x0f) && (flag == 1))
+  18   1          {
+  19   2              tmp_2 = KEY_PORT;
+  20   2              num = tmp_1 + tmp_2;
+  21   2          }
+  22   1          return num;
+  23   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     35    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

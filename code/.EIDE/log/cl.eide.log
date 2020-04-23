@@ -1,0 +1,262 @@
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/21|16:39:07|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'c:\Users\Harry\Desktop\mouse\code\src\main.c~RF65f3ec1.TMP'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:3690)
+	at c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71526)
+	at M.UpdateFileGroup (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70992)
+	at M.onSourceDirChanged (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:74659)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71769)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:64246)
+	at t.FileWatcher.e.OnRename (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70139)
+	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81772)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/21|20:11:26|GMT+0800
+
+
+[Error] : Error: write EPIPE
+	at afterWriteDispatched (internal/stream_base_commons.js:146:25)
+	at writeGeneric (internal/stream_base_commons.js:137:3)
+	at Socket._writeGeneric (net.js:698:11)
+	at Socket._write (net.js:710:8)
+	at doWrite (_stream_writable.js:418:12)
+	at writeOrBuffer (_stream_writable.js:402:5)
+	at Socket.Writable.write (_stream_writable.js:302:11)
+	at d.write (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:212:867)
+	at f._writeNow (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:205:110)
+	at Immediate.<anonymous> (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:205:48)
+	at processImmediate (internal/timers.js:439:21)
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/21|22:15:37|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/21|22:36:03|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/21|22:40:40|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/21|22:47:18|GMT+0800
+[Warning] : Error: parse workspace configuration error !
+	at t.WorkspaceConfiguration.Parse (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:108788)
+	at t.WorkspaceConfiguration.Update (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:85832)
+	at t.WorkspaceConfiguration.Init (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:85194)
+	at new v (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:85162)
+	at new t.WorkspaceConfiguration (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:108664)
+	at M.LoadConfigurations (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70617)
+	at M.Load (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:66030)
+	at E._OpenProject (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:167890)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:160935)
+	at EventEmitter.emit (events.js:203:13)
+	at Function.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:4467)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:132132)
+	at EventEmitter.emit (events.js:203:13)
+	at Function.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:4467)
+	at E.LoadWorkspaceProject (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:160975)
+	at new E (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:160588)
+	at new t.ProjectExplorer (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:172173)
+	at t.activate (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:136385)
+	at Function._callActivateOptional (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:788:244)
+	at Function._callActivate (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:787:909)
+	at c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:786:960
+	at async Promise.all (index 8)
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/21|22:50:51|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'c:\Users\Harry\Desktop\mouse\code\src\main.c~RF7035f2c.TMP'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:3690)
+	at c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71526)
+	at M.UpdateFileGroup (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70992)
+	at M.onSourceDirChanged (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:74659)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71769)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:64246)
+	at t.FileWatcher.e.OnRename (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70139)
+	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81772)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+[Error] : Error: ENOENT: no such file or directory, lstat 'c:\Users\Harry\Desktop\mouse\code\src\MFC54F5.tmp'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:3690)
+	at c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71526)
+	at M.UpdateFileGroup (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70992)
+	at M.onSourceDirChanged (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:74659)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71769)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:64246)
+	at t.FileWatcher.e.OnRename (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70139)
+	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81772)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+[Error] : Error: ENOENT: no such file or directory, lstat 'c:\Users\Harry\Desktop\mouse\code\src\MFC7B46.tmp'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:3690)
+	at c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2799)
+	at M.UpdateFileGroup (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71056)
+	at M.onSourceDirChanged (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:74659)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71769)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:64246)
+	at t.FileWatcher.e.OnRename (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70139)
+	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81772)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+[Error] : Error: ENOENT: no such file or directory, lstat 'c:\Users\Harry\Desktop\mouse\code\dependence\MFC69E7.tmp'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:3690)
+	at c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71526)
+	at M.UpdateFileGroup (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70992)
+	at M.onSourceDirChanged (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:74659)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71769)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:64246)
+	at t.FileWatcher.e.OnRename (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70139)
+	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81772)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+[Error] : Error: ENOENT: no such file or directory, lstat 'c:\Users\Harry\Desktop\mouse\code\src\LCD.c'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:3690)
+	at c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2799)
+	at M.UpdateFileGroup (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71056)
+	at M.onSourceDirChanged (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:74659)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71769)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:64246)
+	at t.FileWatcher.e.OnRename (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70139)
+	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81772)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/22|09:25:21|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/22|15:00:55|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/22|19:11:17|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'c:\Users\Harry\Desktop\mouse\code\src\main.c~RFb667415.TMP'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:3690)
+	at c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2799)
+	at M.UpdateFileGroup (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71056)
+	at M.onSourceDirChanged (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:74659)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71769)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:64246)
+	at t.FileWatcher.e.OnRename (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70139)
+	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81549)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+[Error] : Error: ENOENT: no such file or directory, lstat 'c:\Users\Harry\Desktop\mouse\code\src\interrupt.c~RFb687525.TMP'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:3690)
+	at c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71526)
+	at M.UpdateFileGroup (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70992)
+	at M.onSourceDirChanged (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:74659)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71769)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:64246)
+	at t.FileWatcher.e.OnRename (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70139)
+	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81549)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+[Error] : Error: ENOENT: no such file or directory, lstat 'c:\Users\Harry\Desktop\mouse\code\src\update.c'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:3690)
+	at c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71526)
+	at M.UpdateFileGroup (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70992)
+	at M.onSourceDirChanged (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:74659)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71769)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:64246)
+	at t.FileWatcher.e.OnRename (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70139)
+	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81772)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/23|10:41:56|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/23|14:43:31|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/23|15:19:40|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/23|15:20:03|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/23|15:27:57|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/23|15:29:02|GMT+0800
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/23|16:13:55|GMT+0800
+
+

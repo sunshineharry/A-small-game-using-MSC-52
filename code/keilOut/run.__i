@@ -1,0 +1,1 @@
+"src\run.c" OMF2 ROM(SMALL) OPTIMIZE (9,SIZE) BROWSE INCDIR(.\dependence;.\src) DEBUG PRINT(.\Listings\run.lst) OBJECT(.\keilOut\run.obj)

@@ -1,0 +1,147 @@
+C51 COMPILER V9.52.0.0   LCD                                                               04/21/2020 22:49:40 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LCD
+OBJECT MODULE PLACED IN c:\Users\Harry\Desktop\mouse\code\out\LCD.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe C:\USERS\HARRY\DESKTOP\MOUSE\CODE\SRC\LCD.C PRINT(c:\Users\Ha
+                    -rry\Desktop\mouse\code\out\LCD.lst) OMF2 TABS(2) OPTIMIZE(9,SIZE) SMALL ROM(SMALL) INCDIR(c:\Users\Harry\Desktop\mouse\c
+                    -ode\dependence;c:\Users\Harry\Desktop\mouse\code\src;c:\Users\Harry\Desktop\mouse\code\dependence\build-in\toolchain) DE
+                    -FINE(__UVISION_VERSION) OBJECT(c:\Users\Harry\Desktop\mouse\code\out\LCD.o)
+
+line level    source
+
+   1          #include "reg52.h"
+   2          #include "LCD.h"
+   3          
+   4          
+   5          void delay()
+   6          {
+   7   1          uchar j=0,i=0;
+   8   1          for(j=0;j<255;j++)
+   9   1              for(i=0;i<4;i++);
+  10   1      }
+  11          
+  12          void write_char(uchar dat)
+  13          {
+  14   1          // 根据时序图
+  15   1          RS = 1;
+  16   1          RW = 0;
+  17   1          E  = 0;
+  18   1          LCD_PORT = dat;
+  19   1          delay();
+  20   1          E = 1;
+  21   1          E = 0;
+  22   1      }
+  23          
+  24          void write_cmd(uchar command)
+  25          {
+  26   1          RS = 0;
+  27   1          RW = 0;
+  28   1          E  = 0;
+  29   1          LCD_PORT = command;
+  30   1          delay();
+  31   1          E = 1;
+  32   1          E = 0;
+  33   1      }
+  34          
+  35          void init_LCD()
+  36          {
+  37   1          write_cmd(0x38);    // 设置16×2显示，5×7点阵，8位数据接口
+  38   1          write_cmd(0x0c);    // 设置开显示，不显示光标
+  39   1          write_cmd(0x06);    // 写一个字符后地址指针加1
+  40   1          write_cmd(0x01);    // 显示清0，数据指针清0
+  41   1      }
+  42          
+  43          
+  44          /**
+  45           * @brief  在屏幕上显示字符串  
+  46           * @param  addr: 需要显示首地址
+  47           * @param  *str: 字符串的首地址
+  48           */
+  49          void display_LCD(uchar addr,char *str)
+  50          {
+  51   1          uchar i = 0;
+  52   1          write_cmd(addr);
+C51 COMPILER V9.52.0.0   LCD                                                               04/21/2020 22:49:40 PAGE 2   
+
+  53   1          while(str[i]!='\0')
+  54   1          {
+  55   2              write_char(str[i]);
+  56   2              i++;
+  57   2          }
+  58   1      }
+  59          
+  60          /**
+  61           * @brief  在屏幕上显示单个字符  
+  62           * @param  addr: 需要显示地址
+  63           * @param  str: 字符
+  64           */
+  65          void display_LCD_single(uchar addr ,char str)
+  66          {
+  67   1          uchar i = 0;
+  68   1          write_cmd(addr);
+  69   1          write_char(str);
+  70   1      }
+  71          
+  72          /* mode=0：显示清零，指针清零
+  73             mode=1: 仅指针清零   */
+  74          void clear_LCD(bit mode)
+  75          {
+  76   1          if(mode == 0)
+  77   1              write_cmd(0x01);    // 显示清0，数据指针清0
+  78   1          if(mode == 1)
+  79   1              write_cmd(0x02);
+  80   1      }
+  81          
+  82          
+  83          uchar str[4];
+  84          uchar char2string(uchar n)
+  85          {
+  86   1      
+  87   1          uchar *pStr;
+  88   1          pStr = str;
+  89   1          if (n > 99)
+  90   1          {
+  91   2              *pStr = n / 100 + '0';
+  92   2              n %= 100;
+  93   2              pStr += 1;
+  94   2              *pStr = n / 10 + '0';
+  95   2              n %= 10;
+  96   2              pStr += 1;
+  97   2              *pStr = n + '0';
+  98   2          }
+  99   1          if (n > 9)
+ 100   1          {
+ 101   2              *pStr = n / 10 + '0';
+ 102   2              n %= 10;
+ 103   2              pStr += 1;
+ 104   2              *pStr = n + '0';
+ 105   2          }
+ 106   1          if (n < 10)
+ 107   1          {
+ 108   2              *pStr = n + '0';
+ 109   2          }
+ 110   1          pStr += 1;
+ 111   1          *pStr = '\0';
+ 112   1          return str;
+ 113   1      }
+
+C51 COMPILER V9.52.0.0   LCD                                                               04/21/2020 22:49:40 PAGE 3   
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    197    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----       1
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

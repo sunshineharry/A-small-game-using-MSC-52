@@ -1,0 +1,45 @@
+C51 COMPILER V9.52.0.0   RANDOM                                                            04/23/2020 15:25:35 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE RANDOM
+OBJECT MODULE PLACED IN .\keilOut\random.obj
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\random.c OMF2 ROM(SMALL) OPTIMIZE(8,SIZE) BROWSE INCDIR(.
+                    -\dependence;.\src) DEBUG PRINT(.\Listings\random.lst) OBJECT(.\keilOut\random.obj)
+
+line level    source
+
+   1          #include"stdlib.h"
+   2          
+   3          #define uchar unsigned char
+   4          #include "reg52.h"
+   5          
+   6          // TODO 占用空间较大，待优化
+   7          
+   8          void init_random(unsigned char seed)
+   9          {
+  10   1          srand(seed);
+  11   1      }
+  12          
+  13          uchar random(void)
+  14          {
+  15   1          return rand()%15;
+  16   1      }
+  17          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     15    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,98 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              04/21/2020 22:49:40 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN c:\Users\Harry\Desktop\mouse\code\out\main.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe C:\USERS\HARRY\DESKTOP\MOUSE\CODE\SRC\MAIN.C PRINT(c:\Users\H
+                    -arry\Desktop\mouse\code\out\main.lst) OMF2 TABS(2) OPTIMIZE(9,SIZE) SMALL ROM(SMALL) INCDIR(c:\Users\Harry\Desktop\mouse
+                    -\code\dependence;c:\Users\Harry\Desktop\mouse\code\src;c:\Users\Harry\Desktop\mouse\code\dependence\build-in\toolchain) 
+                    -DEFINE(__UVISION_VERSION) OBJECT(c:\Users\Harry\Desktop\mouse\code\out\main.o)
+
+line level    source
+
+   1          #include "reg52.h"
+   2          #include "LCD_func.h"
+   3          #include "keyboard_func.h"
+   4          #include "interrupt_func.h"
+   5          
+   6          #define uchar unsigned char
+   7          
+   8          uchar count = 0;
+   9          bit is_pause = 0;
+  10          
+  11          void init()
+  12          {
+  13   1          init_LCD();
+  14   1          init_ex0();
+  15   1          init_ex1();
+  16   1          init_TIM_0();
+  17   1      }
+  18          
+  19          
+  20          void main()
+  21          {
+  22   1          uchar num = 0xff;
+  23   1          init();
+  24   1          display_LCD(0x80,"WELCOME");
+  25   1          while(1);
+  26   1      }
+  27          
+  28          
+  29          
+  30          /***********************
+  31                 暂停与继续
+  32          ***********************/
+  33          
+  34          // INT1 中断，手动设置低优先级
+  35          void pause() interrupt 2
+  36          {
+  37   1          is_pause = 1;
+  38   1          clear_LCD(0);
+  39   1          display_LCD(0x80,"PAUSE");
+  40   1          while(is_pause);
+  41   1      }
+  42          
+  43          // INT0 中断，手动设置高优先级
+  44          void continuee() interrupt 0
+  45          {
+  46   1          clear_LCD(0);
+  47   1          is_pause = 0;   // 退出pause中断
+  48   1      }
+  49          
+  50          
+  51          /***********************
+  52                 正常运行
+C51 COMPILER V9.52.0.0   MAIN                                                              04/21/2020 22:49:40 PAGE 2   
+
+  53          ***********************/
+  54          
+  55          // 正常情况每秒钟更新
+  56          void TIM_0_isr() interrupt 1
+  57          {
+  58   1          TH0 = (65536 - 50000) / 256;
+  59   1          TL0 = (65536 - 50000) % 256;
+  60   1          count++;
+  61   1          if (count==20)
+  62   1          {
+  63   2              count = 0;
+  64   2              //update();
+  65   2          }
+  66   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    193    ----
+   CONSTANT SIZE    =     14    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      1       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

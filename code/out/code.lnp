@@ -1,0 +1,3 @@
+
+c:\Users\Harry\Desktop\mouse\code\out\interrupt.o,c:\Users\Harry\Desktop\mouse\code\out\keyboard.o,c:\Users\Harry\Desktop\mouse\code\out\LCD.o,c:\Users\Harry\Desktop\mouse\code\out\main.o TO c:\Users\Harry\Desktop\mouse\code\out\code
+PRINT (c:\Users\Harry\Desktop\mouse\code\out\code.map) REMOVEUNUSED
