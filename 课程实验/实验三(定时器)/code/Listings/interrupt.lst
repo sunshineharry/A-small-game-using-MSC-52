@@ -1,10 +1,10 @@
-C51 COMPILER V9.52.0.0   INTERRUPT                                                         04/24/2020 18:13:59 PAGE 1   
+C51 COMPILER V9.52.0.0   INTERRUPT                                                         04/24/2020 20:39:37 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE INTERRUPT
 OBJECT MODULE PLACED IN .\keilOut\interrupt.obj
-COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\interrupt.c LARGE OMF2 OPTIMIZE(8,SPEED) BROWSE INCDIR(.\
-                    -dependence;.\src) DEBUG PRINT(.\Listings\interrupt.lst) OBJECT(.\keilOut\interrupt.obj)
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\interrupt.c OMF2 ROM(SMALL) OPTIMIZE(0,SIZE) BROWSE INCDI
+                    -R(.\dependence;.\src) DEBUG PRINT(.\Listings\interrupt.lst) OBJECT(.\keilOut\interrupt.obj)
 
 line level    source
 
@@ -39,35 +39,31 @@ line level    source
   29          {
   30   1          // 计数器，累计两个脉冲产生中断
   31   1          TMOD = TMOD | 0x60;     // 计数器1选择方式2工作
-  32   1          TH1 = 0xFD;
-  33   1          TL1 = 0xBD;
+  32   1          TH1 = 0xFE;
+  33   1          TL1 = 0xFE;
   34   1          ET1 = 1;                // 打开 T1 中断
   35   1          EA = 1;                 // 打开总中断
-  36   1          PT0 = 0;                // 设置低优先级
-  37   1          TR0 = 1;                // T1 启动
+  36   1          PT1 = 0;                // 设置低优先级
+  37   1          TR1 = 1;                // T1 启动
   38   1      }
   39          
-  40          void TIM_1_pause(void)
-  41          {
-  42   1          TR0 = 0;                // T1 关闭
-  43   1      }
-  44          
-  45          void TIM_1_continue(void)
-  46          {
-  47   1          TR0 = 1;                // T1 启动
-  48   1      }
+  40          
+  41          void TIM_1_rrestart(void)
+  42          {
+  43   1          TL1 = 0xFE;             // T1 重装
+  44   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     54    ----
+   CODE SIZE        =     52    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
-C51 COMPILER V9.52.0.0   INTERRUPT                                                         04/24/2020 18:13:59 PAGE 2   
-
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
+C51 COMPILER V9.52.0.0   INTERRUPT                                                         04/24/2020 20:39:37 PAGE 2   
+
    EDATA SIZE       =   ----    ----
    HDATA SIZE       =   ----    ----
    XDATA CONST SIZE =   ----    ----

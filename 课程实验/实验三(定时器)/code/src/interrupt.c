@@ -29,20 +29,16 @@ void TIM_1_init(void)
 {
     // 计数器，累计两个脉冲产生中断
     TMOD = TMOD | 0x60;     // 计数器1选择方式2工作
-    TH1 = 0xFD;
-    TL1 = 0xBD;
+    TH1 = 0xFE;
+    TL1 = 0xFE;
     ET1 = 1;                // 打开 T1 中断
     EA = 1;                 // 打开总中断
-    PT0 = 0;                // 设置低优先级
-    TR0 = 1;                // T1 启动
+    PT1 = 0;                // 设置低优先级
+    TR1 = 1;                // T1 启动
 }
 
-void TIM_1_pause(void)
-{
-    TR0 = 0;                // T1 关闭
-}
 
-void TIM_1_continue(void)
+void TIM_1_rrestart(void)
 {
-    TR0 = 1;                // T1 启动
+    TL1 = 0xFE;             // T1 重装
 }

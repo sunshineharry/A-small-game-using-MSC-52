@@ -1,2 +1,20 @@
 
 [12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/24|17:35:49|GMT+0800
+[Error] : Error: EPERM: operation not permitted, lstat 'c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\实验\仿真实验\课程实验\实验三(定时器)\code\src\interrupt.c~RF27f1d48.TMP'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:3690)
+	at c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71526)
+	at M.UpdateFileGroup (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70992)
+	at M.onSourceDirChanged (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:74659)
+	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:71769)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:64246)
+	at t.FileWatcher.e.OnRename (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:70139)
+	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81549)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)

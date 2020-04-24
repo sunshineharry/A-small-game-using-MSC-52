@@ -1,47 +1,69 @@
-C51 COMPILER V9.52.0.0   TASKS                                                             04/24/2020 18:15:19 PAGE 1   
+C51 COMPILER V9.52.0.0   TASKS                                                             04/24/2020 20:46:15 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE TASKS
 OBJECT MODULE PLACED IN .\keilOut\tasks.obj
-COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\tasks.c LARGE OMF2 OPTIMIZE(8,SPEED) BROWSE INCDIR(.\depe
-                    -ndence;.\src) DEBUG PRINT(.\Listings\tasks.lst) OBJECT(.\keilOut\tasks.obj)
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\tasks.c OMF2 ROM(SMALL) OPTIMIZE(0,SIZE) BROWSE INCDIR(.\
+                    -dependence;.\src) DEBUG PRINT(.\Listings\tasks.lst) OBJECT(.\keilOut\tasks.obj)
 
 line level    source
 
    1          #include "reg51.h"
    2          #include "interrupt_func.h"
    3          #define uchar unsigned char
-   4          
-   5          uchar ctrl_led  = 0x01;
-   6          
-   7          void press_twice() interrupt 3
-   8          {
-   9   1          TIM_0_continue();
-  10   1      }
-  11          
-  12          void shine_led() interrupt 1
-  13          {
-  14   1          P1 = ctrl_led;
-  15   1          ctrl_led = ctrl_led << 1;
-  16   1          if (ctrl_led == 0x00)
-  17   1              TIM_0_pause();
-  18   1          else
-  19   1              TIM_0_continue();
-  20   1      }
+   4          void update(void);
+   5          
+   6          uchar ctrl_led  = 0xFE;
+   7          
+   8          void press_twice() interrupt 3      // 当按键按下两次后，计数器 TIM_1 产生中断
+   9          {
+  10   1          TIM_0_continue();               // 打开定时器 TIM_0
+  11   1      }
+  12          
+  13          
+  14          uchar i = 0;
+  15          void shine_led() interrupt 1        // 当定时器 TIM_0 产生中断，即50ms 时间到
+  16          {
+  17   1          TIM_0_continue();               // 定时器 TIM_0 手动重装
+  18   1          i++;
+  19   1          if(i==20)                       // i=20时，即 1s 定时时间到
+  20   1          {
+  21   2              i = 0;                      // 清空标志位
+  22   2              update();                   // 更新 LED 灯及其他逻辑
+  23   2          }
+  24   1      }
+  25          
+  26          void update(void)
+  27          {
+  28   1          P1 = ctrl_led;                  // 点亮 LED
+  29   1          if (ctrl_led == 0xFF)           // 当一个循环结束后
+  30   1          {
+  31   2              ctrl_led = 0xFE;            // 恢复初值
+  32   2              TIM_0_pause();              // 关闭定时器 TIM_0
+  33   2              TIM_1_rrestart();           // 重装计数器
+  34   2          }  
+  35   1          else
+  36   1          {
+  37   2              ctrl_led = ctrl_led << 1;
+  38   2              ctrl_led = ctrl_led | 0x01; // 产生下个时刻 LED 的控制信号
+  39   2          } 
+  40   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    142    ----
+   CODE SIZE        =    158    ----
    CONSTANT SIZE    =   ----    ----
-   XDATA SIZE       =      1    ----
+   XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----    ----
+   DATA SIZE        =      2    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
    EDATA SIZE       =   ----    ----
    HDATA SIZE       =   ----    ----
    XDATA CONST SIZE =   ----    ----
    FAR CONST SIZE   =   ----    ----
+C51 COMPILER V9.52.0.0   TASKS                                                             04/24/2020 20:46:15 PAGE 2   
+
 END OF MODULE INFORMATION.
 
 

@@ -50,7 +50,7 @@
     "excludeList": [],
     "outDir": ".\\out",
     "uploadConfig": {
-        "bin": "null",
+        "bin": ".\\out\\code.hex",
         "eepromImgPath": "null",
         "options": "./.EIDE/stc.flash.json"
     }
