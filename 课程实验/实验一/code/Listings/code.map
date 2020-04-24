@@ -1,0 +1,226 @@
+LX51 LINKER/LOCATER V4.66.1.0                                                           04/24/2020  16:07:06  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
+C:\PROGRAM FILES\KEIL\C51\BIN\LX51.EXE .\keilOut\18221197.obj TO .\keilOut\code PRINT (.\Listings\code.map)
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\keilOut\18221197.obj (18221197)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?UIDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?SIDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\keilOut\code (18221197)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   0001DEH   CODE
+I:000000H   I:000000H   I:00007FH   000018H   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\keilOut\code (18221197)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000017H   000010H   BYTE   UNIT     DATA           ?DT?18221197
+000018H   000018H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00003AH   000038H   BYTE   INBLOCK  CODE           ?PR?DEC_2_BCD?18221197
+00003BH   000067H   00002DH   BYTE   INBLOCK  CODE           ?PR?MEAN?18221197
+000068H   00007FH   000018H   BYTE   INBLOCK  CODE           ?PR?MAXX?18221197
+000080H   000097H   000018H   BYTE   INBLOCK  CODE           ?PR?MINN?18221197
+000098H   0000A7H   000010H   BYTE   INBLOCK  CODE           ?PR?MAIN?18221197
+0000A8H   000133H   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+000134H   0001BEH   00008BH   BYTE   UNIT     CODE           ?C?LIB_CODE
+0001BFH   0001DDH   00001FH   BYTE   UNIT     CODE           ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   .\keilOut\code (18221197)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/18221197
+  +--> ?C_INITSEG
+
+MAIN/18221197               ----- -----  ----- -----
+  +--> MAXX/18221197
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  16:07:06  PAGE 2
+
+
+  +--> MINN/18221197
+  +--> MEAN/18221197
+  +--> DEC_2_BCD/18221197
+
+MAXX/18221197               ----- -----  ----- -----
+
+MINN/18221197               ----- -----  ----- -----
+
+MEAN/18221197               ----- -----  ----- -----
+
+DEC_2_BCD/18221197          ----- -----  ----- -----
+
+?C_INITSEG                  ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\keilOut\code (18221197)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      01000189H   CODE     ---       ?C?SIDIV
+      01000134H   CODE     ---       ?C?UIDIV
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      010000EFH   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      0000000AH   DATA     BYTE      AVG
+      00000008H   DATA     BYTE      BCDH
+      00000009H   DATA     BYTE      BCDL
+      01000003H   CODE     ---       DEC_2_BCD
+      01000098H   CODE     ---       main
+      0000000CH   DATA     BYTE      MAX
+      01000068H   CODE     ---       maxx
+      0100003BH   CODE     ---       mean
+      0000000BH   DATA     BYTE      MIN
+      01000080H   CODE     ---       minn
+      0000000DH   DATA     ---       s
+      00000017H   DATA     BYTE      SUM
+
+
+
+SYMBOL TABLE OF MODULE:  .\keilOut\code (18221197)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       18221197
+      00000017H   PUBLIC    DATA     BYTE      SUM
+      0000000DH   PUBLIC    DATA     ---       s
+      0000000CH   PUBLIC    DATA     BYTE      MAX
+      0000000BH   PUBLIC    DATA     BYTE      MIN
+      0000000AH   PUBLIC    DATA     BYTE      AVG
+      00000009H   PUBLIC    DATA     BYTE      BCDL
+      00000008H   PUBLIC    DATA     BYTE      BCDH
+      01000098H   PUBLIC    CODE     ---       main
+      01000003H   PUBLIC    CODE     ---       DEC_2_BCD
+      0100003BH   PUBLIC    CODE     ---       mean
+      01000080H   PUBLIC    CODE     ---       minn
+      01000068H   PUBLIC    CODE     ---       maxx
+
+      01000068H   BLOCK     CODE     ---       LVL=0
+      01000068H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     BYTE      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      01000068H   LINE      CODE     ---       #13
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  16:07:06  PAGE 3
+
+
+      01000068H   LINE      CODE     ---       #14
+      01000068H   LINE      CODE     ---       #15
+      0100006AH   LINE      CODE     ---       #16
+      0100006DH   LINE      CODE     ---       #17
+      0100006EH   LINE      CODE     ---       #18
+      0100006EH   LINE      CODE     ---       #19
+      01000079H   LINE      CODE     ---       #20
+      0100007BH   LINE      CODE     ---       #21
+      0100007FH   LINE      CODE     ---       #22
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000080H   BLOCK     CODE     ---       LVL=0
+      01000080H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     BYTE      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      01000080H   LINE      CODE     ---       #24
+      01000080H   LINE      CODE     ---       #25
+      01000080H   LINE      CODE     ---       #26
+      01000082H   LINE      CODE     ---       #27
+      01000085H   LINE      CODE     ---       #28
+      01000086H   LINE      CODE     ---       #29
+      01000086H   LINE      CODE     ---       #30
+      01000091H   LINE      CODE     ---       #31
+      01000093H   LINE      CODE     ---       #32
+      01000097H   LINE      CODE     ---       #33
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100003BH   BLOCK     CODE     ---       LVL=0
+      0100003BH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     BYTE      i
+      00000004H   SYMBOL    DATA     INT       sum
+      ---         BLOCKEND  ---      ---       LVL=1
+      0100003BH   LINE      CODE     ---       #35
+      0100003BH   LINE      CODE     ---       #36
+      0100003BH   LINE      CODE     ---       #37
+      0100003DH   LINE      CODE     ---       #38
+      0100003FH   LINE      CODE     ---       #39
+      0100003FH   LINE      CODE     ---       #40
+      0100004DH   LINE      CODE     ---       #41
+      01000067H   LINE      CODE     ---       #42
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      01000003H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     BYTE      tmp
+      ---         BLOCKEND  ---      ---       LVL=1
+      01000003H   LINE      CODE     ---       #44
+      01000003H   LINE      CODE     ---       #45
+      01000003H   LINE      CODE     ---       #46
+      01000003H   LINE      CODE     ---       #47
+      0100000AH   LINE      CODE     ---       #48
+      01000012H   LINE      CODE     ---       #49
+      0100001BH   LINE      CODE     ---       #50
+      01000032H   LINE      CODE     ---       #51
+      01000036H   LINE      CODE     ---       #52
+      0100003AH   LINE      CODE     ---       #54
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000098H   BLOCK     CODE     ---       LVL=0
+      01000098H   LINE      CODE     ---       #56
+      01000098H   LINE      CODE     ---       #57
+      01000098H   LINE      CODE     ---       #58
+      0100009AH   LINE      CODE     ---       #59
+      0100009CH   LINE      CODE     ---       #60
+      010000A2H   LINE      CODE     ---       #61
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  16:07:06  PAGE 4
+
+
+      010000A4H   LINE      CODE     ---       #62
+      010000A6H   LINE      CODE     ---       #66
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?UIDIV
+      01000134H   PUBLIC    CODE     ---       ?C?UIDIV
+
+      ---         MODULE    ---      ---       ?C?SIDIV
+      01000189H   PUBLIC    CODE     ---       ?C?SIDIV
+
+      ---         MODULE    ---      ---       ?C_INIT
+      010000EFH   PUBLIC    CODE     ---       ?C_START
+
+Program Size: data=25.0 xdata=0 const=0 code=478
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

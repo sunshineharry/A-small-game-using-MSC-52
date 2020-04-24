@@ -1,0 +1,58 @@
+{
+    "name": "code",
+    "type": "C51",
+    "mode": "Release",
+    "toolchain": "Keil_C51",
+    "uploader": "stcgal",
+    "dependenceList": [
+        {
+            "groupName": "custom",
+            "depList": [
+                {
+                    "name": "default",
+                    "incList": [
+                        ".\\dependence",
+                        ".\\src",
+                        ".\\dependence\\build-in\\toolchain"
+                    ],
+                    "libList": [],
+                    "sourceDirList": [],
+                    "defineList": []
+                }
+            ]
+        },
+        {
+            "groupName": "build-in",
+            "depList": [
+                {
+                    "name": "toolchain",
+                    "incList": [
+                        "C:\\Program Files\\Keil\\C51\\INC",
+                        ".\\dependence\\build-in\\toolchain"
+                    ],
+                    "sourceDirList": [
+                        ".\\dependence\\build-in\\toolchain"
+                    ],
+                    "libList": [
+                        "C:\\Program Files\\Keil\\C51\\LIB"
+                    ],
+                    "defineList": []
+                }
+            ]
+        }
+    ],
+    "compileConfig": {
+        "options": ""
+    },
+    "srcDirs": [
+        ".\\src",
+        ".\\dependence"
+    ],
+    "excludeList": [],
+    "outDir": ".\\out",
+    "uploadConfig": {
+        "bin": ".\\out\\code.hex",
+        "eepromImgPath": "null",
+        "options": "./.EIDE/stc.flash.json"
+    }
+}
