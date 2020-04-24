@@ -1,11 +1,11 @@
-LX51 LINKER/LOCATER V4.66.1.0                                                           04/24/2020  16:05:53  PAGE 1
+LX51 LINKER/LOCATER V4.66.1.0                                                           04/24/2020  16:14:01  PAGE 1
 
 
 LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
-C:\PROGRAM FILES\KEIL\C51\BIN\LX51.EXE C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑ
->> é\ÊµÑéÒ»\CODE\OUT\18221197.O TO C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\Êµ
->> ÑéÒ»\CODE\OUT\CODE PRINT (c:\Users\Harry\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÒ»\c
->> ode\out\code.map) REMOVEUNUSED
+C:\PROGRAM FILES\KEIL\C51\BIN\LX51.EXE c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæ
+>> ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÒ»\code\out\18221197.o TO c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\Ê
+>> µÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÒ»\code\out\code PRINT (c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»ú
+>> Ô­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÒ»\code\out\code.map) REMOVEUNUSED
 
 
 CPU MODE:     8051 MODE
@@ -13,8 +13,8 @@ MEMORY MODEL: SMALL
 
 
 INPUT MODULES INCLUDED:
-  C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÒ»\CODE\OUT\18221197.O (1822119
->> 7)
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÒ»\code\out\1822119
+>> 7.o (18221197)
          COMMENT TYPE 0: C51 V9.52.0.0
   C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
          COMMENT TYPE 1: A51 / ASM51 Assembler
@@ -26,18 +26,18 @@ INPUT MODULES INCLUDED:
          COMMENT TYPE 1: A51 / ASM51 Assembler
 
 
-ACTIVE MEMORY CLASSES OF MODULE:  C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\ÊµÑ
->> éÒ»\CODE\OUT\CODE (18221197)
+ACTIVE MEMORY CLASSES OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\
+>> ¿Î³ÌÊµÑé\ÊµÑéÒ»\code\out\code (18221197)
 
 BASE        START       END         USED      MEMORY CLASS
 ==========================================================
-C:000000H   C:000000H   C:00FFFFH   0001DEH   CODE
+C:000000H   C:000000H   C:00FFFFH   0001DCH   CODE
 I:000000H   I:000000H   I:00007FH   000018H   DATA
 I:000000H   I:000000H   I:0000FFH   000001H   IDATA
 
 
-MEMORY MAP OF MODULE:  C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÒ»\CODE\OU
->> T\CODE (18221197)
+MEMORY MAP OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\Êµ
+>> ÑéÒ»\code\out\code (18221197)
 
 
 START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
@@ -54,20 +54,20 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 00003BH   000067H   00002DH   BYTE   INBLOCK  CODE           ?PR?MEAN?18221197
 000068H   00007FH   000018H   BYTE   INBLOCK  CODE           ?PR?MAXX?18221197
 000080H   000097H   000018H   BYTE   INBLOCK  CODE           ?PR?MINN?18221197
-000098H   0000A7H   000010H   BYTE   INBLOCK  CODE           ?PR?MAIN?18221197
-0000A8H   000133H   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
-000134H   0001BEH   00008BH   BYTE   UNIT     CODE           ?C?LIB_CODE
-0001BFH   0001DDH   00001FH   BYTE   UNIT     CODE           ?C_INITSEG
+000098H   0000A5H   00000EH   BYTE   INBLOCK  CODE           ?PR?MAIN?18221197
+0000A6H   000131H   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+000132H   0001BCH   00008BH   BYTE   UNIT     CODE           ?C?LIB_CODE
+0001BDH   0001DBH   00001FH   BYTE   UNIT     CODE           ?C_INITSEG
 
 
 
-OVERLAY MAP OF MODULE:   C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÒ»\CODE\
->> OUT\CODE (18221197)
+OVERLAY MAP OF MODULE:   c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\
+>> ÊµÑéÒ»\code\out\code (18221197)
 
 
 FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
 --> CALLED FUNCTION/MODULE  START  STOP  START  STOP
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  16:05:53  PAGE 2
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  16:14:01  PAGE 2
 
 
 ====================================================
@@ -93,17 +93,17 @@ DEC_2_BCD/18221197          ----- -----  ----- -----
 
 
 
-PUBLIC SYMBOLS OF MODULE:  C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÒ»\COD
->> E\OUT\CODE (18221197)
+PUBLIC SYMBOLS OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑ
+>> é\ÊµÑéÒ»\code\out\code (18221197)
 
 
       VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
       =================================================
       00000000H   NUMBER   ---       ?C?CODESEG
-      01000189H   CODE     ---       ?C?SIDIV
-      01000134H   CODE     ---       ?C?UIDIV
+      01000187H   CODE     ---       ?C?SIDIV
+      01000132H   CODE     ---       ?C?UIDIV
       00000000H   NUMBER   ---       ?C?XDATASEG
-      010000EFH   CODE     ---       ?C_START
+      010000EDH   CODE     ---       ?C_START
       01000000H   CODE     ---       ?C_STARTUP
       0000000AH   DATA     BYTE      AVG
       00000008H   DATA     BYTE      BCDH
@@ -120,8 +120,8 @@ PUBLIC SYMBOLS OF MODULE:  C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢
 
 
 
-SYMBOL TABLE OF MODULE:  C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÒ»\CODE\
->> OUT\CODE (18221197)
+SYMBOL TABLE OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\·ÂÕæÊµÑé\¿Î³ÌÊµÑé\
+>> ÊµÑéÒ»\code\out\code (18221197)
 
       VALUE       REP       CLASS    TYPE      SYMBOL NAME
       ====================================================
@@ -135,7 +135,7 @@ SYMBOL TABLE OF MODULE:  C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»ú
       00000008H   PUBLIC    DATA     BYTE      BCDH
       01000098H   PUBLIC    CODE     ---       main
       01000003H   PUBLIC    CODE     ---       DEC_2_BCD
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  16:05:53  PAGE 3
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  16:14:01  PAGE 3
 
 
       0100003BH   PUBLIC    CODE     ---       mean
@@ -174,13 +174,13 @@ SYMBOL TABLE OF MODULE:  C:\USERS\HARRY\DOCUME~1\ONEDRI~1\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂ~1\Î¢»ú
       01000000H   PUBLIC    CODE     ---       ?C_STARTUP
 
       ---         MODULE    ---      ---       ?C?UIDIV
-      01000134H   PUBLIC    CODE     ---       ?C?UIDIV
+      01000132H   PUBLIC    CODE     ---       ?C?UIDIV
 
       ---         MODULE    ---      ---       ?C?SIDIV
-      01000189H   PUBLIC    CODE     ---       ?C?SIDIV
+      01000187H   PUBLIC    CODE     ---       ?C?SIDIV
 
       ---         MODULE    ---      ---       ?C_INIT
-      010000EFH   PUBLIC    CODE     ---       ?C_START
+      010000EDH   PUBLIC    CODE     ---       ?C_START
 
-Program Size: data=25.0 xdata=0 const=0 code=478
+Program Size: data=25.0 xdata=0 const=0 code=476
 LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
