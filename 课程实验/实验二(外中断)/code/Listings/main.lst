@@ -1,0 +1,36 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              04/24/2020 17:09:57 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\keilOut\main.obj
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\main.c OMF2 ROM(SMALL) OPTIMIZE(8,SPEED) BROWSE INCDIR(.\
+                    -dependence;.\src;.\dependence\build-in;.\dependence\build-in\toolchain) DEBUG PRINT(.\Listings\main.lst) OBJECT(.\keilOu
+                    -t\main.obj)
+
+line level    source
+
+   1          #include "interrupt_func.h"
+   2          
+   3          void main()
+   4          {
+   5   1          EX0_init();
+   6   1          while (1);
+   7   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =      4    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

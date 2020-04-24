@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "C_Cpp.default.intelliSenseMode": "gcc-x86",
+        "files.autoGuessEncoding": true,
+        "C_Cpp.default.cppStandard": "c++11",
+        "C_Cpp.default.cStandard": "c99",
+        "C_Cpp.errorSquiggles": "Disabled",
+        "EIDE.ARM.Option.AutoGenerateRTE_Components": false
+    }
+}

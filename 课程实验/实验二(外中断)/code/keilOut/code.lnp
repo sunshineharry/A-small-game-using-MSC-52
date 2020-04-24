@@ -1,0 +1,6 @@
+".\keilOut\interrupt.obj",
+".\keilOut\main.obj",
+".\keilOut\tasks.obj" 
+TO ".\keilOut\code" 
+
+PRINT(".\Listings\code.map")

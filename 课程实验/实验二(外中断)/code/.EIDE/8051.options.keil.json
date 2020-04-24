@@ -1,0 +1,23 @@
+{
+    "beforeBuildTasks": [],
+    "afterBuildTasks": [
+        {
+            "name": "clean",
+            "command": "del \"${OutDir}\\*._*\""
+        }
+    ],
+    "global": {
+        "ram-mode": "LARGE",
+        "rom-mode": "LARGE"
+    },
+    "c/cpp-compiler": {
+        "optimization-type": "SPEED",
+        "optimization-level": "level-8"
+    },
+    "asm-compiler": {},
+    "linker": {
+        "misc-controls": [
+            "REMOVEUNUSED"
+        ]
+    }
+}
