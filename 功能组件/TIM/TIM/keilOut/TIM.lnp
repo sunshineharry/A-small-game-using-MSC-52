@@ -1,4 +1,0 @@
-".\keilOut\main.obj" 
-TO ".\keilOut\TIM" 
-
-PRINT(".\Listings\TIM.map")
