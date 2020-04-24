@@ -1,0 +1,48 @@
+C51 COMPILER V9.52.0.0   TASKS                                                             04/24/2020 18:15:19 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE TASKS
+OBJECT MODULE PLACED IN .\keilOut\tasks.obj
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\tasks.c LARGE OMF2 OPTIMIZE(8,SPEED) BROWSE INCDIR(.\depe
+                    -ndence;.\src) DEBUG PRINT(.\Listings\tasks.lst) OBJECT(.\keilOut\tasks.obj)
+
+line level    source
+
+   1          #include "reg51.h"
+   2          #include "interrupt_func.h"
+   3          #define uchar unsigned char
+   4          
+   5          uchar ctrl_led  = 0x01;
+   6          
+   7          void press_twice() interrupt 3
+   8          {
+   9   1          TIM_0_continue();
+  10   1      }
+  11          
+  12          void shine_led() interrupt 1
+  13          {
+  14   1          P1 = ctrl_led;
+  15   1          ctrl_led = ctrl_led << 1;
+  16   1          if (ctrl_led == 0x00)
+  17   1              TIM_0_pause();
+  18   1          else
+  19   1              TIM_0_continue();
+  20   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    142    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =      1    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

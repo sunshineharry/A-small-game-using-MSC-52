@@ -1,0 +1,1 @@
+"src\tasks.c" LARGE OMF2 OPTIMIZE (8,SPEED) BROWSE INCDIR(.\dependence;.\src) DEBUG PRINT(.\Listings\tasks.lst) OBJECT(.\keilOut\tasks.obj)
