@@ -7,6 +7,8 @@
 
 本游戏提供暂停和继续功能。
 
+![output](https://github.com/sunshineharry/A-small-game-using-MSC-52/blob/master/%E6%89%93%E5%9C%B0%E9%BC%A0%E6%B8%B8%E6%88%8F/documents/output2.gif?raw=true)
+
 ## 文件说明
 - `proteus`文件夹中为proteus仿真
   
