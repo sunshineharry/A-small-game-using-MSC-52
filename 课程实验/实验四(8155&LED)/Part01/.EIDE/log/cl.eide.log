@@ -35,3 +35,7 @@
 	at FSWatcher.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.11.0\dist\extension.js:1:81772)
 	at FSWatcher.emit (events.js:203:13)
 	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/25|08:36:35|GMT+0800
