@@ -1,0 +1,64 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              04/25/2020 09:54:34 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\keilOut\main.obj
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\main.c OMF2 ROM(SMALL) OPTIMIZE(8,SPEED) BROWSE INCDIR(.\
+                    -dependence;.\src) DEBUG PRINT(.\Listings\main.lst) OBJECT(.\keilOut\main.obj)
+
+line level    source
+
+   1          #include "reg51.h"
+   2          #include "8155_func.h"
+   3          #include "intrins.h"
+   4          #define uchar unsigned char
+   5          
+   6          uchar num_encode[] = /* 共阴极数码管前有反相器，使用共阳极编码*/
+   7              {0x8c,0x89};
+   8          
+   9          uchar LED_num[] =   /* 选择哪个 LED 二极管亮，如果是 0 ，表示都熄灭*/
+  10              {255,223,239,247,251,253,254};
+  11          
+  12          void delay1s(void)   //误差 0us
+  13          {
+  14   1          unsigned char a,b,c;
+  15   1          for(c=167;c>0;c--)
+  16   1              for(b=171;b>0;b--)
+  17   1                  for(a=16;a>0;a--);
+  18   1          _nop_();  //if Keil,require use intrins.h
+  19   1      }
+  20          
+  21          void main()
+  22          {
+  23   1          C8155_init(0x0f);
+  24   1      
+  25   1          while(1)
+  26   1          {
+  27   2              C8155_PC = LED_num[1];
+  28   2              C8155_PB = num_encode[0];
+  29   2              delay1s();
+  30   2      
+  31   2              C8155_PC = LED_num[1];
+  32   2              C8155_PB = num_encode[1];
+  33   2              delay1s();
+  34   2          }
+  35   1          
+  36   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     46    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      9    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

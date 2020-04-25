@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\仿真实验\\课程实验\\实验四(8155&LED)\\Part02\\dependence",
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\仿真实验\\课程实验\\实验四(8155&LED)\\Part02\\src",
+                "C:\\Program Files\\Keil\\C51\\INC",
+                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\仿真实验\\课程实验\\实验四(8155&LED)\\Part02\\dependence\\build-in\\toolchain"
+            ],
+            "defines": [
+                "__C51__",
+                "reentrant=",
+                "conpact=",
+                "small=",
+                "large=",
+                "data=",
+                "idata=",
+                "pdata=",
+                "xdata=",
+                "code=",
+                "bit=char",
+                "sbit=char",
+                "sfr=char",
+                "sfr16=int",
+                "sfr32=int"
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}
