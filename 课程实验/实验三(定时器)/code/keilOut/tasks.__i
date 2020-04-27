@@ -1,1 +1,0 @@
-"src\tasks.c" OMF2 ROM(SMALL) OPTIMIZE (0,SIZE) BROWSE INCDIR(.\dependence;.\src) DEBUG PRINT(.\Listings\tasks.lst) OBJECT(.\keilOut\tasks.obj)

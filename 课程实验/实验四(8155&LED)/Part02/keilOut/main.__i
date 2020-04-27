@@ -1,1 +1,0 @@
-"src\main.c" OMF2 ROM(SMALL) OPTIMIZE (8,SPEED) BROWSE INCDIR(.\dependence;.\src) DEBUG PRINT(.\Listings\main.lst) OBJECT(.\keilOut\main.obj)
