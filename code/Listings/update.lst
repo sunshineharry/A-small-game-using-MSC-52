@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   UPDATE                                                            04/23/2020 22:15:29 PAGE 1   
+C51 COMPILER V9.52.0.0   UPDATE                                                            04/28/2020 22:56:15 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE UPDATE
@@ -13,71 +13,69 @@ line level    source
    3          #include "keyboard_func.h"
    4          #include "interrupt_func.h"
    5          #define uchar unsigned char
-   6          
-   7          extern uchar random_num;
+   6          extern uchar random_num;
+   7          uchar score = 0;                // 记录得分
    8          
    9          
-  10          uchar score = 0;    // 记录得分
-  11          
-  12          uchar decode = 0;   // 随机数所对应的键盘及点阵的编码
-  13                              // 键盘与LED编码：
-  14                              //   eg). 0b 10111000  表示第三行第四列
-  15          
-  16          uchar code_dic[]   /* 编码字典*/
-  17              = {0xe1,0xb4,0xe2,0xb2,0xd1,0xd4,0xd8,0xe8,0x72,0xb1,0xb8,0x71,0xd2,0x74,0xe4,0x78};
-  18          
-  19          
-  20          // 每半秒钟更新信息
-  21          void update()
-  22          {
-  23   1          // 定义变量
-  24   1          uchar i = 0, j = 0;         // 循环变量
-  25   1          static uchar error = 0;     // 错误次数
-  26   1      
-  27   1          // 获取随机数，并获取随机数对应编码
-  28   1          if(random_num<0 || random_num>15)
-  29   1              random_num = 0;
-  30   1          decode = code_dic[random_num];
+  10          // 每半秒钟更新信息
+  11          void update()
+  12          {
+  13   1          // 定义变量
+  14   1          uchar i = 0, j = 0;         // 循环变量
+  15   1          static uchar error = 0;     // 错误次数
+  16   1          
+  17   1      
+  18   1          uchar decode = 0;           // 随机数所对应的键盘及点阵的编码
+  19   1                                      //   eg). 0b 10111000  表示第三行第四列
+  20   1      
+  21   1          uchar code_dic[]            /* 编码字典*/
+  22   1              = {0xe1,0xb4,0xe2,0xb2,0xd1,0xd4,0xd8,0xe8,0x72,0xb1,0xb8,0x71,0xd2,0x74,0xe4,0x78};
+  23   1      
+  24   1          // 获取随机数，并获取随机数对应编码
+  25   1          if(random_num<0 || random_num>15)
+  26   1              random_num = 0;
+  27   1          decode = code_dic[random_num];
+  28   1      
+  29   1          // 点亮点阵
+  30   1          P0 = decode;
   31   1      
-  32   1          // 点亮点阵
-  33   1          P0 = decode;
-  34   1      
-  35   1          // 连续扫描键盘，当检测到对应按键时，取得分数
-  36   1          // 连续三次没有按对按键，结束游戏
-  37   1          for (i=0;i<255;i++)
-  38   1          {
-  39   2              for (j=0;j<150;j++)
-  40   2              {
-  41   3                  if(decode == KEYBOARD_get_key())
-  42   3                  {
-  43   4                      score++;        // 检测到正确按键，更新分数
-  44   4                      error = 0;      // 清空错误次数
-  45   4                      P0 = 0x00;      // 关闭 LED 点阵
-  46   4                      goto LABAL;     // 直接跳转到更新屏幕分数显示
-  47   4                  }
-  48   3              }
-  49   2          }
-  50   1          error++;
-  51   1          if (error>3)
-  52   1          {
-  53   2              LCD_clear(0);
-  54   2              LCD_display(0x80,"FAIL!");
-C51 COMPILER V9.52.0.0   UPDATE                                                            04/23/2020 22:15:29 PAGE 2   
+  32   1          // 连续扫描键盘，当检测到对应按键时，取得分数
+  33   1          // 连续三次没有按对按键，结束游戏
+  34   1          for (i=0;i<255;i++)
+  35   1          {
+  36   2              for (j=0;j<150;j++)
+  37   2              {
+  38   3                  if(decode == KEYBOARD_get_key())
+  39   3                  {
+  40   4                      score++;        // 检测到正确按键，更新分数
+  41   4                      error = 0;      // 清空错误次数
+  42   4                      P0 = 0x00;      // 关闭 LED 点阵
+  43   4                      goto LABAL;     // 直接跳转到更新屏幕分数显示
+  44   4                  }
+  45   3              }
+  46   2          }
+  47   1          error++;
+  48   1          if (error>3)
+  49   1          {
+  50   2              LCD_clear(0);           // 清空LCD
+  51   2              P0 = 0x00;              // 关闭 LED 点阵
+  52   2              LCD_display(0x80,"FAIL!");
+  53   2              while(1);
+  54   2          }
+C51 COMPILER V9.52.0.0   UPDATE                                                            04/28/2020 22:56:15 PAGE 2   
 
-  55   2              while(1);
-  56   2          }
-  57   1      
-  58   1          // 刷新屏幕
-  59   1          LABAL:LCD_display(0xC2,uchar2string(score));
-  60   1      }
+  55   1      
+  56   1          // 刷新屏幕
+  57   1          LABAL:LCD_display(0xC2,uchar2string(score));
+  58   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    104    ----
-   CONSTANT SIZE    =      6    ----
+   CODE SIZE        =    125    ----
+   CONSTANT SIZE    =     22    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =     19       2
+   DATA SIZE        =      2      19
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
    EDATA SIZE       =   ----    ----
