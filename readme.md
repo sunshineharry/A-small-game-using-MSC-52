@@ -9,6 +9,13 @@
 
 ![output](https://github.com/sunshineharry/A-small-game-using-MSC-52/blob/master/documents/output2.gif?raw=true)
 
+## Update
+- 4月28日：增加驱动电路,提高稳定性
+  
+## 食用方法
+- 下载或clone项目，打开`\protues\mouse.pdsprj`，进入仿真界面
+- 关于软件版本配置，可以参看我的bilibili，`https://www.bilibili.com/video/BV1Qe411W7H6/`
+
 ## 文件说明
 - `proteus`文件夹中为proteus仿真
   
@@ -37,7 +44,7 @@
 - `update.c`作为对`tasks.c`的补充，完成在正常工作状态下的逻辑，包括 LED 的控制，键盘扫描，LCD 显示屏控制，计分策略等
 
 ## TODO
-- [ ] 在单片机和外围电路之间增加驱动电路
+- [x] 在单片机和外围电路之间增加驱动电路
 - [ ] 使用状态机，实现更多功能
 
 
