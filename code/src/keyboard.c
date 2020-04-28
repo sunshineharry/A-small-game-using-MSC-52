@@ -7,7 +7,7 @@ unsigned char KEYBOARD_get_key()
     unsigned char key_num = 0xff;
     unsigned char tmp_1 = 0, tmp_2 = 0, flag = 0;
     KEY_PORT = 0xf0;
-    // 检测按键是否被按下
+    // 检测按键是否被按下,采用状态机方式，减少延时
     if (KEY_PORT != 0xf0)
     {
         tmp_1 = KEY_PORT;

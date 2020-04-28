@@ -1,1 +1,1 @@
-#define KEY_PORT P1
+#define KEY_PORT P1     // 定义键盘和单片机的接口

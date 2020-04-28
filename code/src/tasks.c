@@ -69,9 +69,8 @@ void TIM_0_isr() interrupt 1
     }
 }
 
-// update 函数实现
-// 每半秒钟更新信息
-void update()
+// update 函数实现，每半秒钟更新信息
+void update(void)
 {
     // 定义变量
     uchar i = 0, j = 0;                 // 循环变量
@@ -96,14 +95,14 @@ void update()
     // 连续三次没有按对按键，结束游戏
     for (i=0;i<255;i++)
     {
-        for (j=0;j<150;j++)
+        for (j=0;j<180;j++)
         {
             if(decode == KEYBOARD_get_key())
             {
                 score++;                // 检测到正确按键，更新分数
                 error = 0;              // 清空错误次数
                 P0 = 0x00;              // 关闭 LED 点阵
-                goto LABAL;             // 直接跳转到更新屏幕分数显示
+                goto LABAL;             // 跳出多重循环，直接跳转到更新屏幕分数显示
             }
         }
     }

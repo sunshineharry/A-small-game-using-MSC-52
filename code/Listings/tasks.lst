@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   TASKS                                                             04/28/2020 23:04:11 PAGE 1   
+C51 COMPILER V9.52.0.0   TASKS                                                             04/28/2020 23:29:43 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE TASKS
@@ -16,8 +16,8 @@ line level    source
    6          #define uchar unsigned char
    7          void update(void);
    8          extern uchar random_num;
-   9          
-  10          uchar score = 0;                        // 记录得分
+   9          uchar score = 0;                        // 记录得分
+  10          
   11          
   12          /********************************************************************************************
   13                                                  延时500ms
@@ -62,7 +62,7 @@ line level    source
   52   1      }
   53          
   54          
-C51 COMPILER V9.52.0.0   TASKS                                                             04/28/2020 23:04:11 PAGE 2   
+C51 COMPILER V9.52.0.0   TASKS                                                             04/28/2020 23:29:43 PAGE 2   
 
   55          /********************************************************************************************
   56                                                  正常运行
@@ -81,58 +81,57 @@ line level    source
   69   2          }
   70   1      }
   71          
-  72          // update 函数实现
-  73          // 每半秒钟更新信息
-  74          void update()
-  75          {
-  76   1          // 定义变量
-  77   1          uchar i = 0, j = 0;                 // 循环变量
-  78   1          static uchar error = 0;             // 错误次数
-  79   1          
-  80   1      
-  81   1          uchar decode = 0;                   // 随机数所对应的键盘及点阵的编码
-  82   1                                              //   eg). 0b 10111000  表示第三行第四列
-  83   1      
-  84   1          uchar code_dic[]                    /* 编码字典*/
-  85   1              = {0xe1,0xb4,0xe2,0xb2,0xd1,0xd4,0xd8,0xe8,0x72,0xb1,0xb8,0x71,0xd2,0x74,0xe4,0x78};
-  86   1      
-  87   1          // 获取随机数，并获取随机数对应编码
-  88   1          if(random_num<0 || random_num>15)
-  89   1              random_num = 0;
-  90   1          decode = code_dic[random_num];
-  91   1      
-  92   1          // 点亮点阵
-  93   1          P0 = decode;
-  94   1      
-  95   1          // 连续扫描键盘，当检测到对应按键时，取得分数
-  96   1          // 连续三次没有按对按键，结束游戏
-  97   1          for (i=0;i<255;i++)
-  98   1          {
-  99   2              for (j=0;j<150;j++)
- 100   2              {
- 101   3                  if(decode == KEYBOARD_get_key())
- 102   3                  {
- 103   4                      score++;                // 检测到正确按键，更新分数
- 104   4                      error = 0;              // 清空错误次数
- 105   4                      P0 = 0x00;              // 关闭 LED 点阵
- 106   4                      goto LABAL;             // 直接跳转到更新屏幕分数显示
- 107   4                  }
- 108   3              }
- 109   2          }
- 110   1          error++;
- 111   1          if (error>3)
- 112   1          {
- 113   2              LCD_clear(0);                   // 清空LCD
- 114   2              P0 = 0x00;                      // 关闭 LED 点阵
- 115   2              LCD_display(0x80,"FAIL!");
- 116   2              while(1);
-C51 COMPILER V9.52.0.0   TASKS                                                             04/28/2020 23:04:11 PAGE 3   
+  72          // update 函数实现，每半秒钟更新信息
+  73          void update(void)
+  74          {
+  75   1          // 定义变量
+  76   1          uchar i = 0, j = 0;                 // 循环变量
+  77   1          static uchar error = 0;             // 错误次数
+  78   1          
+  79   1      
+  80   1          uchar decode = 0;                   // 随机数所对应的键盘及点阵的编码
+  81   1                                              //   eg). 0b 10111000  表示第三行第四列
+  82   1      
+  83   1          uchar code_dic[]                    /* 编码字典*/
+  84   1              = {0xe1,0xb4,0xe2,0xb2,0xd1,0xd4,0xd8,0xe8,0x72,0xb1,0xb8,0x71,0xd2,0x74,0xe4,0x78};
+  85   1      
+  86   1          // 获取随机数，并获取随机数对应编码
+  87   1          if(random_num<0 || random_num>15)
+  88   1              random_num = 0;
+  89   1          decode = code_dic[random_num];
+  90   1      
+  91   1          // 点亮点阵
+  92   1          P0 = decode;
+  93   1      
+  94   1          // 连续扫描键盘，当检测到对应按键时，取得分数
+  95   1          // 连续三次没有按对按键，结束游戏
+  96   1          for (i=0;i<255;i++)
+  97   1          {
+  98   2              for (j=0;j<180;j++)
+  99   2              {
+ 100   3                  if(decode == KEYBOARD_get_key())
+ 101   3                  {
+ 102   4                      score++;                // 检测到正确按键，更新分数
+ 103   4                      error = 0;              // 清空错误次数
+ 104   4                      P0 = 0x00;              // 关闭 LED 点阵
+ 105   4                      goto LABAL;             // 跳出多重循环，直接跳转到更新屏幕分数显示
+ 106   4                  }
+ 107   3              }
+ 108   2          }
+ 109   1          error++;
+ 110   1          if (error>3)
+ 111   1          {
+ 112   2              LCD_clear(0);                   // 清空LCD
+ 113   2              P0 = 0x00;                      // 关闭 LED 点阵
+ 114   2              LCD_display(0x80,"FAIL!");
+ 115   2              while(1);
+ 116   2          }
+C51 COMPILER V9.52.0.0   TASKS                                                             04/28/2020 23:29:43 PAGE 3   
 
- 117   2          }
- 118   1      
- 119   1          // 刷新屏幕
- 120   1          LABAL:LCD_display(0xC2,uchar2string(score));
- 121   1      }
+ 117   1      
+ 118   1          // 刷新屏幕
+ 119   1          LABAL:LCD_display(0xC2,uchar2string(score));
+ 120   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE

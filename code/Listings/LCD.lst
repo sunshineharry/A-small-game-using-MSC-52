@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   LCD                                                               04/28/2020 23:03:45 PAGE 1   
+C51 COMPILER V9.52.0.0   LCD                                                               04/28/2020 23:29:42 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LCD
@@ -62,7 +62,7 @@ line level    source
   52          {
   53   1          uchar i = 0;
   54   1          _LCD_write_cmd(addr);
-C51 COMPILER V9.52.0.0   LCD                                                               04/28/2020 23:03:45 PAGE 2   
+C51 COMPILER V9.52.0.0   LCD                                                               04/28/2020 23:29:42 PAGE 2   
 
   55   1          while(str[i]!='\0')
   56   1          {
@@ -126,7 +126,7 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
    DATA SIZE        =      4       3
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----       1
-C51 COMPILER V9.52.0.0   LCD                                                               04/28/2020 23:03:45 PAGE 3   
+C51 COMPILER V9.52.0.0   LCD                                                               04/28/2020 23:29:42 PAGE 3   
 
    EDATA SIZE       =   ----    ----
    HDATA SIZE       =   ----    ----
