@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <WORKSPACE>
  <FRAME activewindow="0">
-  <PLACEMENT>2c00000002000000030000000083ffffd382ffffffffffffffffffff4700000072000000270a000048070000</PLACEMENT>
+  <PLACEMENT>2c0000000200000003000000ffffffffffffffffffffffffffffffff4700000072000000270a000048070000</PLACEMENT>
   <WINDOW type="default" module="ISIS"/>
  </FRAME>
  <MODULE name="VSMDEBUG">
@@ -15,13 +15,13 @@
      <ITEM name="Version">100</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="1103" x="0" flags="00000032" y="1260" h="660" pid="1" iid="-1">
+   <POPUP w="1103" x="166" flags="00008033" y="681" h="660" pid="1" iid="-1">
     <PROPERTIES>
      <ITEM name="Address Column Width">205</ITEM>
      <ITEM name="AutoResize">No</ITEM>
      <ITEM name="Gridlines">Yes</ITEM>
-     <ITEM name="Item 0">"ran","0x1F",00000001,00000003,31,1,1,00000002,0,00000000,00000000</ITEM>
-     <ITEM name="Item 1">"random_num","0x19",00000001,00000003,25,1,1,00000002,0,00000000,00000000</ITEM>
+     <ITEM name="Item 0">"score","0x37",00000001,00000003,55,1,1,00000002,0,00000000,00000000</ITEM>
+     <ITEM name="Item 1">"decode","0x0A",00000001,00000003,10,1,2,00000002,0,00000000,00000000</ITEM>
      <ITEM name="Item 2">"num","0x07",00000001,00000003,7,1,0,00000002,0,00000000,00000000</ITEM>
      <ITEM name="Item 3">"key","0x0C",00000001,00000003,12,1,0,00000002,0,00000000,00000000</ITEM>
      <ITEM name="Item 4">"TL1","0x008B",00000001,00000002,11,1,2,00000002,0,00000000,00000000</ITEM>
@@ -35,7 +35,7 @@
      <ITEM name="Value Column Width">320</ITEM>
      <ITEM name="Version">100</ITEM>
      <ITEM name="Watch Expression Column Width">80</ITEM>
-     <ITEM name="nItems">1</ITEM>
+     <ITEM name="nItems">2</ITEM>
     </PROPERTIES>
    </POPUP>
    <POPUP w="338" x="363" flags="00000008" y="425" h="428" pid="1" iid="1">

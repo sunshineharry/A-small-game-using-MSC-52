@@ -95,7 +95,7 @@ void update(void)
     // 连续三次没有按对按键，结束游戏
     for (i=0;i<255;i++)
     {
-        for (j=0;j<180;j++)
+        for (j=0;j<150;j++)
         {
             if(decode == KEYBOARD_get_key())
             {
