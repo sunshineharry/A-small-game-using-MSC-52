@@ -1,4 +1,4 @@
-LX51 LINKER/LOCATER V4.66.1.0                                                           04/30/2020  21:19:44  PAGE 1
+LX51 LINKER/LOCATER V4.66.1.0                                                           04/30/2020  21:41:24  PAGE 1
 
 
 LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
@@ -67,7 +67,7 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 000020H.4 000020H   000000H.4 ---    ---      **GAP**
 000021H   00002EH   00000EH   BYTE   UNIT     DATA           _DATA_GROUP_
 00002FH   000032H   000004H   BYTE   UNIT     DATA           ?DT?RAND?RAND
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 2
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 2
 
 
 000033H   000033H   000001H   BYTE   UNIT     DATA           ?DT?TASKS
@@ -135,7 +135,7 @@ _LCD_DELAY/LCD                 ----- -----  ----- -----
 _LCD_DISPLAY/LCD               ----- -----  002CH 002EH
   +--> __LCD_WRITE_CMD/LCD
   +--> __LCD_WRITE_CHAR/LCD
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 3
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 3
 
 
 
@@ -203,7 +203,7 @@ LCD_INIT/LCD                   ----- -----  ----- -----
 EX0_INIT/INTERRUPT             ----- -----  ----- -----
 
 EX1_INIT/INTERRUPT             ----- -----  ----- -----
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 4
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 4
 
 
 
@@ -271,7 +271,7 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code (INTERRUPT)
 *SFR* 000000A8H   DATA     BYTE      IE
 *SFR* 00000088H.1 DATA     BIT       IE0
 *SFR* 00000088H.3 DATA     BIT       IE1
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 5
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 5
 
 
       010002B3H   CODE     ---       init
@@ -339,7 +339,7 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code (INTERRUPT)
 *SFR* 000000CDH   DATA     BYTE      TH2
 *SFR* 00000098H.1 DATA     BIT       TI
       01000258H   CODE     ---       TIM_0_init
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 6
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 6
 
 
       010001AAH   CODE     ---       TIM_0_isr
@@ -407,7 +407,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       000000E0H   SFRSYM    DATA     BYTE      ACC
       000000A8H.1 SFRSYM    DATA     BIT       ET0
       000000A8H.3 SFRSYM    DATA     BIT       ET1
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 7
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 7
 
 
       00000088H.5 SFRSYM    DATA     BIT       TF0
@@ -475,7 +475,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       01000258H   LINE      CODE     ---       #19
       01000258H   LINE      CODE     ---       #22
       0100025BH   LINE      CODE     ---       #23
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 8
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 8
 
 
       0100025EH   LINE      CODE     ---       #24
@@ -543,7 +543,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       000000A8H.5 SFRSYM    DATA     BIT       ET2
       00000088H.7 SFRSYM    DATA     BIT       TF1
       000000C8H.7 SFRSYM    DATA     BIT       TF2
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 9
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 9
 
 
       00000098H.2 SFRSYM    DATA     BIT       RB8
@@ -611,7 +611,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       LCD
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 10
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 10
 
 
       0000001BH   PUBLIC    DATA     ---       str
@@ -679,7 +679,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       00000098H.3 SFRSYM    DATA     BIT       TB8
       000000A8H.2 SFRSYM    DATA     BIT       EX1
       00000088H.2 SFRSYM    DATA     BIT       IT1
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 11
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 11
 
 
       000000CDH   SFRSYM    DATA     BYTE      TH2
@@ -747,7 +747,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       0100028DH   LINE      CODE     ---       #31
       0100028FH   LINE      CODE     ---       #32
       01000291H   LINE      CODE     ---       #33
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 12
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 12
 
 
       01000293H   LINE      CODE     ---       #34
@@ -815,7 +815,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       0100005AH   LINE      CODE     ---       #94
       01000063H   LINE      CODE     ---       #95
       0100006AH   LINE      CODE     ---       #96
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 13
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 13
 
 
       01000071H   LINE      CODE     ---       #97
@@ -883,7 +883,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       0000008CH   SFRSYM    DATA     BYTE      TH0
       000000A8H   SFRSYM    DATA     BIT       EX0
       00000088H   SFRSYM    DATA     BIT       IT0
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 14
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 14
 
 
       0000008DH   SFRSYM    DATA     BYTE      TH1
@@ -951,7 +951,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       00000090H   SFRSYM    DATA     BYTE      P1
       000000A0H   SFRSYM    DATA     BYTE      P2
       000000B0H   SFRSYM    DATA     BYTE      P3
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 15
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 15
 
 
       000000B0H.4 SFRSYM    DATA     BIT       T0
@@ -1019,7 +1019,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       000000D0H.4 SFRSYM    DATA     BIT       RS1
       00000088H.6 SFRSYM    DATA     BIT       TR1
       000000C8H.2 SFRSYM    DATA     BIT       TR2
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 16
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 16
 
 
       000000B8H   SFRSYM    DATA     BIT       PX0
@@ -1087,7 +1087,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       000000C8H.6 SFRSYM    DATA     BIT       EXF2
       000000B0H.7 SFRSYM    DATA     BIT       RD
       000000A8H.4 SFRSYM    DATA     BIT       ES
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 17
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 17
 
 
       000000B8H   SFRSYM    DATA     BYTE      IP
@@ -1155,7 +1155,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       000000C8H   SFRSYM    DATA     BYTE      T2CON
       000000B0H   SFRSYM    DATA     BIT       RXD
       000000B0H.1 SFRSYM    DATA     BIT       TXD
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 18
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 18
 
 
       000000D0H.5 SFRSYM    DATA     BIT       F0
@@ -1223,7 +1223,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       000000E0H   SFRSYM    DATA     BYTE      ACC
       000000A8H.1 SFRSYM    DATA     BIT       ET0
       000000A8H.3 SFRSYM    DATA     BIT       ET1
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 19
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 19
 
 
       00000088H.5 SFRSYM    DATA     BIT       TF0
@@ -1291,7 +1291,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       0100018FH   LINE      CODE     ---       #38
       ---         BLOCKEND  ---      ---       LVL=0
 
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 20
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 20
 
 
       010000F9H   BLOCK     CODE     ---       LVL=0
@@ -1359,7 +1359,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
     CALLER1: CONTINUEE/TASKS
     CALLER2: TIM_0_ISR/TASKS
 
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:19:44  PAGE 21
+LX51 LINKER/LOCATER V4.66.1.0                                                         04/30/2020  21:41:24  PAGE 21
 
 
 *** WARNING L15: MULTIPLE CALL TO FUNCTION
@@ -1372,10 +1372,5 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
     CALLER1: TIM_0_ISR/TASKS
     CALLER2: ?C_C51STARTUP
 
-*** WARNING L25: DATA TYPES DIFFERENT
-    SYMBOL:  update
-    MODULE:  .\keilOut\tasks.obj (TASKS)
-   DEFINED:  .\keilOut\update.obj (UPDATE)
-
 Program Size: data=52.4 xdata=0 const=0 code=1261
-LX51 RUN COMPLETE.  6 WARNING(S),  0 ERROR(S)
+LX51 RUN COMPLETE.  5 WARNING(S),  0 ERROR(S)

@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   TASKS                                                             04/30/2020 21:19:44 PAGE 1   
+C51 COMPILER V9.52.0.0   TASKS                                                             04/30/2020 21:41:23 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE TASKS
@@ -14,7 +14,7 @@ line level    source
    4          #include "interrupt_func.h"
    5          #include "random_func.h"
    6          #define uchar unsigned char
-   7          extern void uptate(void);
+   7          extern void update(void);
    8          extern uchar score;
    9          
   10          
@@ -62,7 +62,7 @@ line level    source
   52          
   53          
   54          /********************************************************************************************
-C51 COMPILER V9.52.0.0   TASKS                                                             04/30/2020 21:19:44 PAGE 2   
+C51 COMPILER V9.52.0.0   TASKS                                                             04/30/2020 21:41:23 PAGE 2   
 
   55                                              正常运行
   56          ********************************************************************************************/
@@ -78,7 +78,6 @@ line level    source
   66   1          {
   67   2              count = 0;                      // 清空标志位
   68   2              update();                       // 调用update函数，执行主逻辑
-*** WARNING C206 IN LINE 68 OF src\tasks.c: 'update': missing function-prototype
   69   2          }
   70   1      }
 
@@ -98,4 +97,4 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
 END OF MODULE INFORMATION.
 
 
-C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

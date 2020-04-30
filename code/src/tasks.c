@@ -4,7 +4,7 @@
 #include "interrupt_func.h"
 #include "random_func.h"
 #define uchar unsigned char
-extern void uptate(void);
+extern void update(void);
 extern uchar score;
 
 
