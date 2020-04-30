@@ -397,6 +397,11 @@
               <FilePath>.\src\main.c</FilePath>
             </File>
             <File>
+              <FileName>update.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\update.c</FilePath>
+            </File>
+            <File>
               <FileName>random.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\random.c</FilePath>

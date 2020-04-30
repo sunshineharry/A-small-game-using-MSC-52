@@ -2,6 +2,7 @@
 ".\keilOut\keyboard.obj",
 ".\keilOut\LCD.obj",
 ".\keilOut\main.obj",
+".\keilOut\update.obj",
 ".\keilOut\random.obj",
 ".\keilOut\tasks.obj" 
 TO ".\keilOut\code" 

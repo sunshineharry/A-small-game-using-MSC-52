@@ -22,11 +22,16 @@ Dialog DLL:      TP51.DLL V2.58
  
 <h2>Project:</h2>
 C:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\实验\大作业\code\code.uvproj
-Project File Date:  04/28/2020
+Project File Date:  04/30/2020
 
 <h2>Output:</h2>
 Build target 'code'
+compiling keyboard.c...
+compiling main.c...
+compiling update.c...
+compiling random.c...
 compiling tasks.c...
+src\tasks.c(68): warning C206: 'update': missing function-prototype
 linking...
 *** WARNING L15: MULTIPLE CALL TO FUNCTION
     NAME:    LCD_CLEAR/LCD
@@ -37,6 +42,10 @@ linking...
     CALLER1: PAUSE/TASKS
     CALLER2: CONTINUEE/TASKS
 *** WARNING L15: MULTIPLE CALL TO FUNCTION
+    NAME:    LCD_CLEAR/LCD
+    CALLER1: CONTINUEE/TASKS
+    CALLER2: TIM_0_ISR/TASKS
+*** WARNING L15: MULTIPLE CALL TO FUNCTION
     NAME:    _LCD_DISPLAY/LCD
     CALLER1: CONTINUEE/TASKS
     CALLER2: TIM_0_ISR/TASKS
@@ -44,9 +53,13 @@ linking...
     NAME:    _LCD_DISPLAY/LCD
     CALLER1: TIM_0_ISR/TASKS
     CALLER2: ?C_C51STARTUP
-Program Size: data=52.3 xdata=0 const=0 code=1463
+*** WARNING L25: DATA TYPES DIFFERENT
+    SYMBOL:  update
+    MODULE:  .\keilOut\tasks.obj (TASKS)
+   DEFINED:  .\keilOut\update.obj (UPDATE)
+Program Size: data=52.4 xdata=0 const=0 code=1261
 creating hex file from ".\keilOut\code"...
-".\keilOut\code" - 0 Error(s), 4 Warning(s).
+".\keilOut\code" - 0 Error(s), 7 Warning(s).
 Build Time Elapsed:  00:00:01
 </pre>
 </body>
