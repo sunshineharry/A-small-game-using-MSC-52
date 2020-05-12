@@ -317,3 +317,44 @@
 
 [12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/4/30|21:16:42|GMT+0800
 [Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+[Error] : Error: write EPIPE
+	at afterWriteDispatched (internal/stream_base_commons.js:146:25)
+	at writeGeneric (internal/stream_base_commons.js:137:3)
+	at Socket._writeGeneric (net.js:698:11)
+	at Socket._write (net.js:710:8)
+	at doWrite (_stream_writable.js:418:12)
+	at writeOrBuffer (_stream_writable.js:402:5)
+	at Socket.Writable.write (_stream_writable.js:302:11)
+	at d.write (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:212:867)
+	at f._writeNow (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:205:110)
+	at Immediate.<anonymous> (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:205:48)
+	at processImmediate (internal/timers.js:439:21)
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/5/1|21:36:06|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+[Error] : Error: write EPIPE
+	at afterWriteDispatched (internal/stream_base_commons.js:146:25)
+	at writeGeneric (internal/stream_base_commons.js:137:3)
+	at Socket._writeGeneric (net.js:698:11)
+	at Socket._write (net.js:710:8)
+	at doWrite (_stream_writable.js:418:12)
+	at writeOrBuffer (_stream_writable.js:402:5)
+	at Socket.Writable.write (_stream_writable.js:302:11)
+	at d.write (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:212:867)
+	at f._writeNow (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:205:110)
+	at Immediate.<anonymous> (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:205:48)
+	at processImmediate (internal/timers.js:439:21)
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/5/6|15:18:17|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/5/10|21:45:52|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
